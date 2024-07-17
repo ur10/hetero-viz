@@ -6,11 +6,12 @@ import numpy as np
 import rospkg
 from task_env import TaskEnv
 import pickle
+import os
 
 rospack = rospkg.RosPack()
 PATH = rospack.get_path('marmot')
 rospy.init_node('driverNode')
-testSet = "/home/ur10/mapf_ws/testSet_simulation"
+testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
 
 env = pickle.load(open(f'{testSet}/env_0/RL.pkl', 'rb'))
 
@@ -19,7 +20,7 @@ for i in range(len(env['agent'])):
     task_dict = {'current_agent_num': 0, 'required_agent_num': max(env['tasks'][i]['requirements']),
                  'task_time': env['tasks'][i]['time']}
     # self.task_track.append(task_dict)
-    START.append(env['agent'][i]['depot'] *5)
+    START.append(env['agent'][i]['depot'] *10 + 0.1*i )
 VIRTUAL_ROBOT_COUNT = 5
 # REAL_ROBOT_MAP = { 2:"102", 9:"104",5:"112",8:"109",1:"106"}
 # REAL_ROBOT_MAP = {1:"106",3:"108",  7:"113", 11:"110",9:"104", 6:"103", 4:"111", 8:"109", 5:"112", 2:"102"}
@@ -105,7 +106,7 @@ def main():
     for i in range (VIRTUAL_ROBOT_COUNT): # For each robot of that type (given by the count in SIMULATION.yaml)
 
         # Get coordinates for the start node of the robot
-        start = getCoord(START[i])
+        start = START[i]
         end = getCoord(GOALS[i])
         print(f' The start position is {start}')
         # Add the launch file for that robot in the list and prepare for launch
@@ -150,7 +151,7 @@ def main():
 
 
     # If this node closes, everything shuts down, so we let it sleep instead
-    rospy.spin() 
+    rospy.spin()
 
 
 if __name__=='__main__':

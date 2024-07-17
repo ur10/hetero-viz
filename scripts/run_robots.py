@@ -7,9 +7,10 @@ import pickle
 from task_env import TaskEnv
 from visualization_msgs.msg import Marker, MarkerArray
 import numpy as np
+import os
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
 VEL_SCALE  = 1
-testSet = "/home/ur10/mapf_ws/testSet_simulation"
+testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
 AGENT_NUMS = 5
 LEFT = [0, 0]
 RESOLUTION = 0.5
@@ -26,7 +27,7 @@ class MultiRobotController:
         self.task_track = []
         env = pickle.load(open(f'{testSet}/env_0/RL.pkl', 'rb'))
         self.env = env
-        task_locations = [env['tasks'][i]['location']*5 for i in range(len(env['tasks']))]
+        task_locations = [env['tasks'][i]['location']*10 + 0.1*i for i in range(len(env['tasks']))]
         print(f'the task locations are {task_locations}')
         self.task_locations = task_locations
         for i in range(len(env['tasks'])):
@@ -34,11 +35,11 @@ class MultiRobotController:
             self.task_track.append(task_dict)
 
         for i in range(AGENT_NUMS):
-            agent_dict = {'task_idx': 0, 'task_num': 0, 'route': [],'waiting': False, 'task_start_time': rospy.Time.now().to_sec(), 'current_position': [0, 0], 'first_arrival': True, 'travelling': False}
+            agent_dict = {'task_idx': 0, 'task_num': 0, 'route': [],'waiting': False, 'task_start_time': rospy.Time.now().to_sec(), 'current_position': [0, 0], 'first_arrival': True, 'travelling': False, 'odom_time': rospy.Time.now().to_sec()}
             agent_dict['route'] = env['agent'][i]['route'][1:-1]
             agent_dict['task_num'] = agent_dict['route'][0]
             self.agents_track.append(agent_dict)
-            self.start_positions.append(env['agent'][i]['depot'] *5)
+            self.start_positions.append(env['agent'][i]['depot'] *10 +0.1*i)
 
 
         for i in range(AGENT_NUMS):
@@ -76,16 +77,19 @@ class MultiRobotController:
          a = 1
          angle = np.arctan2(goal.y - current_pose.y, goal.x - current_pose.x)
          vel = Twist()
-         vel.linear.x = 0.02 * np.cos(angle)
-         vel.linear.y = 0.02 * np.sin(angle)
+         vel.linear.x = 0.6 * np.cos(angle)
+         vel.linear.y = 0.6 * np.sin(angle)
          return  vel
 
     def odom_callback(self, vel, robot_id):
         # Update the position of the corresponding robot
         # self.positions[robot_id] = msg.pose.pose.position
-        self.positions[robot_id].x += vel.linear.x * VEL_SCALE
-        self.positions[robot_id].y += vel.linear.y * VEL_SCALE
-        # rospy.loginfo(f"Robot {robot_id} position: {self.positions[robot_id].x, self.positions[robot_id].y}")
+        current_time = rospy.Time.now().to_sec()
+        time_diff = abs(self.agents_track[robot_id]['odom_time'] - current_time)
+        self.agents_track[robot_id]['odom_time'] = current_time
+        self.positions[robot_id].x += vel.linear.x * time_diff
+        self.positions[robot_id].y += vel.linear.y * time_diff
+        rospy.loginfo(f"Robot {robot_id} position: {self.positions[robot_id].x, self.positions[robot_id].y}")
 
     def publish_velocity_commands(self):
         rate = rospy.Rate(10)  # 10 Hz
@@ -112,7 +116,7 @@ class MultiRobotController:
                         goal_pose = Odometry().pose.pose.position
                         goal_pose.x = self.start_positions[i][0]
                         goal_pose.y = self.start_positions[i][1]
-                        print(f" ROBOT {i} - !!! GOING TO THE Position - {goal_pose}")
+                        # print(f" ROBOT {i} - !!! GOING TO THE Position - {goal_pose}")
                         vel_pub = self.get_goal_velocity(goal_pose, self.positions[i])
                         # print(f"published velocit {vel_pub}")
                         self.vel_pubs[i].publish(vel_pub)
@@ -146,7 +150,7 @@ class MultiRobotController:
                             elif current_agent_count >= required_agent_count and self.agents_track[i]['first_arrival'] == False:
                                 work_time = abs(self.agents_track[i]['task_start_time'] - rospy.Time.now().to_sec())
                                 print(f'Agent{i} The time for working is {work_time}')
-                                if work_time > 12.5:
+                                if work_time > 3.5:
 
                                     self.agents_track[i]['task_idx'] += 1 # (2.7 , 11.4), (-3.2, 7.5),(4.95,6.6),
                                     if self.agents_track[i]['task_idx'] < len(self.agents_track[i]['route']):
@@ -158,7 +162,7 @@ class MultiRobotController:
                                 vel_pub = Twist()
                                 vel_pub.linear.x = 0
                                 vel_pub.linear.y = 0
-                                self.vel_pubs[i].publish(vel_pub)
+                                # self.vel_pubs[i].publish(vel_pub)
                             # elif work_time < 2.5 and current_agent_count < required_agent_count:
 
                         #
@@ -240,16 +244,16 @@ class MultiRobotController:
             marker.type = Marker.CYLINDER
             marker.action = Marker.ADD
             coords = self.getCoord(self.task_locations[i])
-            marker.pose.position.x = markerpose[i][0]
-            marker.pose.position.y = markerpose[i][1] #+ (4.4 - 1.13)
+            marker.pose.position.x = self.task_locations[i][0]
+            marker.pose.position.y = self.task_locations[i][1]
             marker.pose.position.z = 0
             marker.pose.orientation.x = 0.0
             marker.pose.orientation.y = 0.0
             marker.pose.orientation.z = 0.0
             marker.pose.orientation.w = 1.0
-            marker.scale.x = 0.5
-            marker.scale.y = 0.5
-            marker.scale.z = 0.5
+            marker.scale.x = 0.1
+            marker.scale.y = 0.1
+            marker.scale.z = 0.05
             marker.color.a = 1.0
             marker.color.r = 0.0
             marker.color.g = 1.0
