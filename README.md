@@ -4,6 +4,7 @@
 - cd mapf_ws/src
 - git clone git@github.com:ur10/hetero-viz.git
 - catkin_make
+- To visualize the markers in rviz pane, goto add button and select MarkerArray option
 
 
 ## Panel 1 -
