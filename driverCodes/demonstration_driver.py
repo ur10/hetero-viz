@@ -13,7 +13,7 @@ PATH = rospack.get_path('marmot')
 rospy.init_node('driverNode')
 testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
 
-env = pickle.load(open(f'{testSet}/env_0/RL.pkl', 'rb'))
+env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
 
 START = []
 for i in range(len(env['agent'])):

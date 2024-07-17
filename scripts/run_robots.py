@@ -25,7 +25,7 @@ class MultiRobotController:
         self.start_positions = []
         self.agents_track = []
         self.task_track = []
-        env = pickle.load(open(f'{testSet}/env_0/RL.pkl', 'rb'))
+        env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
         self.env = env
         task_locations = [env['tasks'][i]['location']*10 + 0.1*i for i in range(len(env['tasks']))]
         print(f'the task locations are {task_locations}')
@@ -89,7 +89,7 @@ class MultiRobotController:
         self.agents_track[robot_id]['odom_time'] = current_time
         self.positions[robot_id].x += vel.linear.x * time_diff
         self.positions[robot_id].y += vel.linear.y * time_diff
-        rospy.loginfo(f"Robot {robot_id} position: {self.positions[robot_id].x, self.positions[robot_id].y}")
+        # rospy.loginfo(f"Robot {robot_id} position: {self.positions[robot_id].x, self.positions[robot_id].y}")
 
     def publish_velocity_commands(self):
         rate = rospy.Rate(10)  # 10 Hz
