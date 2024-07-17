@@ -1,0 +1,27 @@
+<launch>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!-- <arg name="world_name" value="$(find marmot)/worlds/marmot_world.world"/> -->
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <!-- <arg name="gui" value="true"/> -->
+    <arg name="gui" value="false"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <!-- <node name="central_marmot" pkg="marmot" type="graphCentral.py" output="screen"/> -->
+
+    <include file="$(find marmot)/launch/vrpn.launch"/>
+
+
+
+  <node pkg="map_server" type="map_server" name="map_broadcaster" args="$(find marmot)/map/demonstration.yaml">
+    <param name="frame_id" value="map" />
+  </node>
+  
+  <node pkg="tf" type="static_transform_publisher" name="Optitrack_to_map"  args="4.5 0 0.07 0 0 0 /map /optitrack 100"/>
+
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find marmot)/rviz/dynamic_rviz.rviz" />
+</launch>

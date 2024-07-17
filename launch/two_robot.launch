@@ -1,0 +1,54 @@
+<launch>
+
+  <!-- <param command="$(find xacro)/xacro $(find marmot)/urdf/TD_custom.xacro" name="robot_description"/> -->
+
+
+  <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch">
+
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="false"/>
+
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include> -->
+
+  <param name="robotCount" value="2" />
+
+  <!-- <node name="central_marmot" pkg="marmot" type="graphCentral.py" output="screen"/> -->
+ <include file="$(find marmot)/launch/demonstration.launch"/>
+  
+  <!-- <include file="$(find marmot)/launch/oneSpoofSet.launch"/> -->
+
+  <include file="$(find marmot)/launch/oneRealSet.launch">
+    <arg name="robot_real_id" value="11" />
+    <arg name="robot_name" value="1" />
+    <arg name="robot_IP" value="192.168.0.110" />
+  </include>
+
+  <!-- <include file="$(find marmot)/launch/oneSet.launch">
+    <arg name="robot_name" value="0" />
+    <arg name="pose_x" value="-6.25" />
+    <arg name="pose_y" value="3" />
+    <arg name="goal_x" value="6.25" />
+    <arg name="goal_y" value="3" />
+    <arg name="color" default="Red"/>
+  </include>
+
+  <include file="$(find marmot)/launch/oneSet.launch">
+      <arg name="robot_name" value="1" />
+      <arg name="pose_x" value="-3.75" />
+      <arg name="pose_y" value="4" />
+      <arg name="goal_x" value="3.75" />
+      <arg name="goal_y" value="3" />
+      <arg name="color" default="Green"/>
+  </include> -->
+
+  <!-- <node pkg="map_server" type="map_server" name="map_broadcaster" args="$(find marmot)/map/demonstration.yaml">
+    <param name="frame_id" value="map" />
+  </node>
+  
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find marmot)/rviz/static_rviz.rviz" /> -->
+
+
+</launch>

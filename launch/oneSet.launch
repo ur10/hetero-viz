@@ -1,0 +1,23 @@
+<launch>
+  <arg name="robot_name" default="0" />
+  <arg name="pose_x" default="0" />
+  <arg name="pose_y" default="0" />
+  <arg name="goal_x" default="0" />
+  <arg name="goal_y" default="0" />
+  <arg name="color" default="Red"/>
+
+  <include file="$(find marmot)/launch/oneRobot.launch">
+    <arg name="robot_name" value="$(arg robot_name)" />
+    <arg name="pose_x" value="$(arg pose_x)" />
+    <arg name="pose_y" value="$(arg pose_y)" />
+    <arg name="robot_color" value="$(arg color)"/>
+  </include>
+
+  <include file="$(find marmot)/launch/spawnGoalPole.launch">
+    <arg name="robot_name" value="$(arg robot_name)" />
+    <arg name="pose_x" value="$(arg goal_x)" />
+    <arg name="pose_y" value="$(arg goal_y)" />
+    <arg name="robot_color" value="$(arg color)"/>
+  </include>
+
+</launch>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Pole">
+  <xacro:arg name="robot_color" default="Red" />
+
+  <material name="Red"><color rgba="1.0 0.0 0.0 1.0" /></material>
+  <material name="Green"><color rgba="0.0 1.0 0.0 1.0" /></material>
+  <material name="Blue"><color rgba="0.0 0.0 1.0 1.0" /></material>
+  <material name="Yellow"><color rgba="1.0 1.0 0.0 1.0" /></material>
+  <material name="Cyan"><color rgba="0.0 1.0 1.0 1.0" /></material>
+  <material name="Magenta"><color rgba="1.0 0.0 1.0 1.0" /></material>
+  <material name="White"><color rgba="1.0 1.0 1.0 1.0" /></material>
+  <material name="Black"><color rgba="0.0 0.0 0.0 1.0" /></material>
+  <material name="Gray"><color rgba="0.5 0.5 0.5 1.0" /></material>
+  <material name="Orange"><color rgba="1.0 0.5 0.0 1.0" /></material>
+  <material name="Purple"><color rgba="0.5 0.0 0.5 1.0" /></material>
+  <material name="Brown"><color rgba="0.6 0.3 0.1 1.0" /></material>
+  <material name="Pink"><color rgba="1.0 0.75 0.8 1.0" /></material>
+  <material name="Turquoise"><color rgba="0.25 0.88 0.82 1.0" /></material>
+  <material name="Gold"><color rgba="1.0 0.84 0.0 1.0" /></material>
+  <material name="Silver"><color rgba="0.75 0.75 0.75 1.0" /></material>
+
+  <link name="pole_footprint"/>
+
+  <gazebo reference="pole_link">
+    <gravity>0</gravity>
+    <material>Gazebo/$(arg robot_color)</material>
+  </gazebo>
+  
+  <link name="pole_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.01" radius="0.15"/>
+      </geometry>
+      <material name="$(arg robot_color)" />
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.0001" radius="0.0001"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="10"/>
+      <inertia ixx="0.015" iyy="0.0375" izz="0.0375" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="base_link_joint" type="fixed">
+    <parent link="pole_footprint"/>
+    <child link="pole_link"/>
+    <origin xyz="0 0 0"/>
+  </joint>
+
+</robot>

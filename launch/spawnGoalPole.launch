@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+
+
+    <!--  ******************** Robot Model ********************  -->
+  <arg name="robot_name" default="0" />
+  <arg name="pose_x" default="0" />
+  <arg name="pose_y" default="0" />
+  <arg name = "robot_color" default = "Gazebo/Red"/>
+  <arg name="model" default="$(find marmot)/urdf/goalPole.xacro"/>
+
+
+  <group ns="nexus$(arg robot_name)_goal">
+    <param name="tf_prefix" value="nexus$(arg robot_name)_goal" />
+
+    <!-- Load robot description -->
+
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model) robot_color:=$(arg robot_color)" />
+
+    <!-- Spawn the robot -->
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
+          args="-urdf -model nexus$(arg robot_name)_goal -param robot_description -x $(arg pose_x) -y $(arg pose_y) -z -0.05" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    
+  </group>
+  
+  <node pkg="tf" type="static_transform_publisher" name="nexus$(arg robot_name)_goal_world_tf_broadcaster"  args="$(arg pose_x) $(arg pose_y) 0 0 0 0 /map /nexus$(arg robot_name)_goal/pole_footprint 100"/>
+
+</launch>
+
+

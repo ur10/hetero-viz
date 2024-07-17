@@ -1,0 +1,37 @@
+<launch>
+  <arg name="robot_name" default="1" />
+  <arg name="robot_real_id" default="1" />
+  <arg name="robot_IP" default="asd" />
+  <arg name="startX" default="6" />
+  <arg name="startY" default="1" />
+  <arg name="robot_color" default="Red" />
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="RigidBody_world"  args="0 0 0.07 0 0 0 /RigidBody2 /RigidBody2/base_footprint 100"/> -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="RigidBody_world"  args="$(arg pose_x) $(arg pose_y) 0 0 0 0 /map /RigidBody/odom 100"/> -->
+
+  <!-- <group ns="RigidBody$(arg robot_name)"> -->
+  <group ns="nexus$(arg robot_name)">
+    <param name="tf_prefix" value="nexus$(arg robot_name)" />
+    <!-- <param name="tf_prefix" value="RigidBody$(arg robot_real_id)" /> -->
+    <param command="$(find xacro)/xacro $(find marmot)/urdf/simple.xacro robot_color:=$(arg robot_color)" name="robot_description"/>
+
+    <node name="roboTFNode" pkg="marmot" type="realRobotTransform.py" output="screen" clear_params="true">
+      <param name="name" value="$(arg robot_name)" /> 
+      <param name="RealID" value="$(arg robot_real_id)" /> 
+    </node>
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+    <node name="roboNode" pkg="marmot" type="realController.py" output="screen" clear_params="true">
+      <param name="name" value="$(arg robot_name)" /> 
+      <param name="startX" value="$(arg startX)" /> 
+      <param name="startY" value="$(arg startY)" /> 
+      <param name="RealID" value="$(arg robot_real_id)" /> 
+    </node>
+    
+    <node name="robotSSHnode" pkg="marmot" type="autossh.py" clear_params="true">
+      <param name="IP" value="$(arg robot_IP)" /> 
+    </node>
+  </group>
+  
+  </launch>

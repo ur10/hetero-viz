@@ -1,0 +1,30 @@
+<launch>
+  <arg name="robot_name" default="1" />
+  <arg name="startX" default="1" />
+  <arg name="startY" default="1" />
+
+  <arg name="robot_color" default="Red" />
+
+
+  <!-- <group ns="RigidBody$(arg robot_name)"> -->
+  <group ns="nexus$(arg robot_name)">
+    <param name="tf_prefix" value="nexus$(arg robot_name)" />
+    <!-- <param name="tf_prefix" value="RigidBody$(arg robot_real_id)" /> -->
+    <param command="$(find xacro)/xacro $(find marmot)/urdf/simple.xacro robot_color:=$(arg robot_color)" name="robot_description"/>
+
+    <!-- <node name="roboTFNode" pkg="marmot" type="spoofRobotTransform.py" output="screen" clear_params="true">
+      <param name="name" value="$(arg robot_name)" /> 
+
+    </node>
+     -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+    <node name="roboNode" pkg="marmot" type="graphController.py" output="screen" clear_params="true">
+      <param name="name" value="$(arg robot_name)" />
+      <param name="startX" value="$(arg startX)" />
+      <param name="startY" value="$(arg startY)" />
+    </node>
+
+  </group>
+  
+  </launch>

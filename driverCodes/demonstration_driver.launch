@@ -1,0 +1,11 @@
+<launch>
+<!--     <arg name="robot_name" default="1" /> -->
+<!--     <arg name="startX" default="1" /> -->
+<!--     <arg name="startY" default="1" /> -->
+    <node name="driver" pkg="marmot" type="demonstration_driver.py" output="screen"/>
+<!--     <node name="roboNode" pkg="marmot" type="graphController.py" output="screen" clear_params="true"> -->
+<!--       <param name="name" value="1" /> -->
+<!--       <param name="startX" value="1" /> -->
+<!--       <param name="startY" value="1" /> -->
+<!--     </node> -->
+</launch>

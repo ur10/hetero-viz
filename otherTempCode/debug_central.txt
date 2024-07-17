@@ -1,0 +1,4661 @@
+Total robots 30
+[INFO] [1715225394.893603]: Init Done Central Marmot
+Using original Swen Graph
+[INFO] [1715225404.947886]: Graph init Done
+[INFO] [1715225404.948797]: taskID: 1
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225404.950602]: taskID: 2
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225404.951765]: taskID: 63
+robotID: 1
+action: 4
+status: 201
+[INFO] [1715225404.953269]: taskID: 64
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225404.954290]: taskID: 125
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225404.955538]: taskID: 65
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225404.956656]: taskID: 187
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225404.957748]: taskID: 126
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225404.958858]: taskID: 249
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225404.960088]: taskID: 66
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225404.961243]: taskID: 311
+robotID: 5
+action: 1
+status: 201
+[INFO] [1715225404.962538]: taskID: 188
+robotID: 3
+action: 1
+status: 201
+[INFO] [1715225404.963513]: taskID: 373
+robotID: 6
+action: 2
+status: 201
+[INFO] [1715225404.964839]: taskID: 127
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225404.966698]: taskID: 435
+robotID: 7
+action: 4
+status: 201
+[INFO] [1715225404.968091]: taskID: 250
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225404.969208]: taskID: 497
+robotID: 8
+action: 4
+status: 201
+[INFO] [1715225404.970367]: taskID: 67
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225404.971342]: taskID: 559
+robotID: 9
+action: 2
+status: 201
+[INFO] [1715225404.972526]: taskID: 312
+robotID: 5
+action: 1
+status: 201
+[INFO] [1715225404.973501]: taskID: 621
+robotID: 10
+action: 3
+status: 201
+[INFO] [1715225404.974535]: taskID: 189
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225404.975599]: taskID: 683
+robotID: 11
+action: 3
+status: 201
+[INFO] [1715225404.980425]: taskID: 374
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225404.981077]: taskID: 745
+robotID: 12
+action: 4
+status: 201
+[INFO] [1715225404.984529]: taskID: 436
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225404.985835]: taskID: 807
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225404.987002]: taskID: 251
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225404.988263]: taskID: 931
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225404.989860]: taskID: 560
+robotID: 9
+action: 0
+status: 201
+[INFO] [1715225404.990997]: taskID: 993
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225404.992357]: taskID: 313
+robotID: 5
+action: 1
+status: 201
+[INFO] [1715225404.993393]: taskID: 1055
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225404.994467]: taskID: 622
+robotID: 10
+action: 4
+status: 201
+[INFO] [1715225404.995504]: taskID: 1117
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225404.996700]: taskID: 190
+robotID: 3
+action: 4
+status: 201
+[INFO] [1715225404.998301]: taskID: 932
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225404.999282]: taskID: 1179
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225405.000379]: taskID: 375
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225405.002657]: taskID: 1241
+robotID: 20
+action: 4
+status: 201
+[INFO] [1715225405.004227]: taskID: 746
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225405.005279]: taskID: 1303
+robotID: 21
+action: 2
+status: 201
+[INFO] [1715225405.006457]: taskID: 437
+robotID: 7
+action: 4
+status: 201
+[INFO] [1715225405.007540]: taskID: 1365
+robotID: 22
+action: 4
+status: 201
+[INFO] [1715225405.008813]: taskID: 808
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225405.009912]: taskID: 1427
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225405.011585]: taskID: 252
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225405.012968]: taskID: 1489
+robotID: 24
+action: 4
+status: 201
+[INFO] [1715225405.016605]: taskID: 561
+robotID: 9
+action: 0
+status: 201
+[INFO] [1715225405.017781]: taskID: 1551
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.019035]: taskID: 994
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.020148]: taskID: 1613
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225405.021250]: taskID: 1056
+robotID: 17
+action: 2
+status: 201
+[INFO] [1715225405.022320]: taskID: 1675
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.023408]: taskID: 623
+robotID: 10
+action: 4
+status: 201
+[INFO] [1715225405.024501]: taskID: 1737
+robotID: 28
+action: 3
+status: 201
+[INFO] [1715225405.025595]: taskID: 1118
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225405.026572]: taskID: 1799
+robotID: 29
+action: 1
+status: 201
+[INFO] [1715225405.027649]: taskID: 191
+robotID: 3
+action: 3
+status: 201
+Compare DONE
+[INFO] [1715225405.029328]: taskID: 933
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.033165]: taskID: 1180
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225405.034650]: taskID: 376
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225405.035979]: taskID: 1242
+robotID: 20
+action: 4
+status: 201
+[INFO] [1715225405.037291]: taskID: 747
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225405.038596]: taskID: 1304
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225405.039949]: taskID: 438
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225405.041471]: taskID: 1366
+robotID: 22
+action: 4
+status: 201
+[INFO] [1715225405.044192]: taskID: 1552
+robotID: 25
+action: 2
+status: 201
+[INFO] [1715225405.045315]: taskID: 809
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225405.048894]: taskID: 1428
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225405.050428]: taskID: 253
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225405.051902]: taskID: 1490
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.053647]: taskID: 562
+robotID: 9
+action: 0
+status: 201
+[INFO] [1715225405.055100]: taskID: 995
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.056482]: taskID: 1614
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225405.057813]: taskID: 1057
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.059095]: taskID: 1676
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.060627]: taskID: 624
+robotID: 10
+action: 1
+status: 201
+[INFO] [1715225405.061866]: taskID: 1738
+robotID: 28
+action: 4
+status: 201
+[INFO] [1715225405.063345]: taskID: 1800
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225405.066458]: taskID: 192
+robotID: 3
+action: 3
+status: 201
+[INFO] [1715225405.067878]: taskID: 934
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.069308]: taskID: 1181
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225405.070651]: taskID: 377
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225405.071983]: taskID: 1243
+robotID: 20
+action: 1
+status: 201
+[INFO] [1715225405.073336]: taskID: 748
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225405.075225]: taskID: 1305
+robotID: 21
+action: 2
+status: 201
+[INFO] [1715225405.076950]: taskID: 439
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225405.078426]: taskID: 1367
+robotID: 22
+action: 4
+status: 201
+[INFO] [1715225405.080173]: taskID: 1553
+robotID: 25
+action: 1
+status: 201
+[INFO] [1715225405.082647]: taskID: 810
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225405.084736]: taskID: 1429
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225405.086150]: taskID: 254
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225405.087495]: taskID: 1491
+robotID: 24
+action: 4
+status: 201
+[INFO] [1715225405.089007]: taskID: 563
+robotID: 9
+action: 0
+status: 201
+[INFO] [1715225405.090347]: taskID: 996
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.091721]: taskID: 1058
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.093108]: taskID: 1677
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.094485]: taskID: 625
+robotID: 10
+action: 2
+status: 201
+[INFO] [1715225405.095684]: taskID: 1739
+robotID: 28
+action: 3
+status: 201
+[INFO] [1715225405.096909]: taskID: 1801
+robotID: 29
+action: 4
+status: 201
+[INFO] [1715225405.098231]: taskID: 193
+robotID: 3
+action: 3
+status: 201
+[INFO] [1715225405.099541]: taskID: 935
+robotID: 15
+action: 4
+status: 201
+[INFO] [1715225405.101302]: taskID: 1182
+robotID: 19
+action: 0
+status: 201
+[INFO] [1715225405.102855]: taskID: 378
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225405.104666]: taskID: 1244
+robotID: 20
+action: 1
+status: 201
+[INFO] [1715225405.106325]: taskID: 749
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225405.110555]: taskID: 1306
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225405.112073]: taskID: 1368
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225405.113531]: taskID: 1554
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.114868]: taskID: 811
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225405.116255]: taskID: 1430
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225405.117648]: taskID: 1492
+robotID: 24
+action: 4
+status: 201
+[INFO] [1715225405.119043]: taskID: 997
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.120453]: taskID: 1059
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.121783]: taskID: 1678
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.122998]: taskID: 626
+robotID: 10
+action: 1
+status: 201
+[INFO] [1715225405.124499]: taskID: 1740
+robotID: 28
+action: 3
+status: 201
+[INFO] [1715225405.125602]: taskID: 1802
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225405.128263]: taskID: 194
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225405.129614]: taskID: 936
+robotID: 15
+action: 3
+status: 201
+[INFO] [1715225405.130936]: taskID: 379
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225405.132153]: taskID: 1245
+robotID: 20
+action: 1
+status: 201
+[INFO] [1715225405.133584]: taskID: 750
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225405.135110]: taskID: 1307
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225405.136894]: taskID: 1555
+robotID: 25
+action: 2
+status: 201
+[INFO] [1715225405.139619]: taskID: 812
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225405.141733]: taskID: 1493
+robotID: 24
+action: 4
+status: 201
+[INFO] [1715225405.144473]: taskID: 998
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.145867]: taskID: 1060
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.147249]: taskID: 1679
+robotID: 27
+action: 3
+status: 201
+[INFO] [1715225405.148610]: taskID: 1741
+robotID: 28
+action: 4
+status: 201
+[INFO] [1715225405.149929]: taskID: 1803
+robotID: 29
+action: 1
+status: 201
+[INFO] [1715225405.151262]: taskID: 195
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225405.152948]: taskID: 937
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.154329]: taskID: 380
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225405.155677]: taskID: 1246
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.157132]: taskID: 1556
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.159089]: taskID: 1494
+robotID: 24
+action: 4
+status: 201
+[INFO] [1715225405.161705]: taskID: 999
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.163106]: taskID: 1061
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.164382]: taskID: 1680
+robotID: 27
+action: 2
+status: 201
+[INFO] [1715225405.165662]: taskID: 1742
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.167077]: taskID: 1804
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225405.168573]: taskID: 196
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.169979]: taskID: 938
+robotID: 15
+action: 4
+status: 201
+[INFO] [1715225405.171834]: taskID: 381
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225405.173505]: taskID: 1247
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.176503]: taskID: 1557
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.177986]: taskID: 1495
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.179331]: taskID: 1000
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.180706]: taskID: 1062
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.182013]: taskID: 1681
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.183291]: taskID: 1743
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.184708]: taskID: 1805
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225405.186176]: taskID: 197
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.187539]: taskID: 939
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.188932]: taskID: 382
+robotID: 6
+action: 2
+status: 201
+[INFO] [1715225405.191066]: taskID: 1248
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.196254]: taskID: 1558
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.197644]: taskID: 1496
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.199150]: taskID: 1001
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225405.200647]: taskID: 1063
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.202219]: taskID: 1682
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.204187]: taskID: 1744
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.205851]: taskID: 1806
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225405.207416]: taskID: 198
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.209961]: taskID: 940
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.211874]: taskID: 383
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225405.213360]: taskID: 1249
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.214636]: taskID: 1559
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.215940]: taskID: 1497
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.217229]: taskID: 1002
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225405.218556]: taskID: 1064
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.219891]: taskID: 1683
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.221154]: taskID: 1745
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.222404]: taskID: 1807
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225405.223660]: taskID: 199
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.225059]: taskID: 941
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225405.226329]: taskID: 384
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225405.227560]: taskID: 1250
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.228920]: taskID: 1560
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.230341]: taskID: 1498
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.232547]: taskID: 1003
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.234737]: taskID: 1065
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225405.237840]: taskID: 1684
+robotID: 27
+action: 1
+status: 201
+[INFO] [1715225405.240136]: taskID: 1746
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.241697]: taskID: 200
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.243044]: taskID: 942
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.244292]: taskID: 385
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225405.245528]: taskID: 1251
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.246804]: taskID: 1561
+robotID: 25
+action: 0
+status: 201
+[INFO] [1715225405.248032]: taskID: 1499
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.249418]: taskID: 1004
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225405.250717]: taskID: 1066
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225405.252405]: taskID: 1685
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.254215]: taskID: 1747
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.257275]: taskID: 201
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.258633]: taskID: 943
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.260330]: taskID: 386
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225405.261764]: taskID: 1252
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.263359]: taskID: 1500
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.264862]: taskID: 1005
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225405.266183]: taskID: 1067
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.268098]: taskID: 1686
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.270869]: taskID: 1748
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.272424]: taskID: 202
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225405.273700]: taskID: 944
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.274997]: taskID: 387
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225405.276269]: taskID: 1253
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.277624]: taskID: 1501
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.278952]: taskID: 1068
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.280162]: taskID: 1687
+robotID: 27
+action: 3
+status: 201
+[INFO] [1715225405.281388]: taskID: 1749
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.282602]: taskID: 203
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.284510]: taskID: 388
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225405.287100]: taskID: 1254
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.288971]: taskID: 1502
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225405.290987]: taskID: 1069
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225405.292349]: taskID: 1688
+robotID: 27
+action: 2
+status: 201
+[INFO] [1715225405.293632]: taskID: 1750
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.294987]: taskID: 204
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.296347]: taskID: 389
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225405.297735]: taskID: 1255
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.299859]: taskID: 1070
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225405.303621]: taskID: 1689
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.305248]: taskID: 1751
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.306485]: taskID: 205
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.307697]: taskID: 390
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225405.309050]: taskID: 1256
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225405.310408]: taskID: 1071
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225405.311761]: taskID: 1690
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225405.313255]: taskID: 1752
+robotID: 28
+action: 0
+status: 201
+[INFO] [1715225405.314521]: taskID: 206
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.315925]: taskID: 1072
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225405.317740]: taskID: 1691
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.320014]: taskID: 207
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.321693]: taskID: 1073
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225405.323028]: taskID: 1692
+robotID: 27
+action: 1
+status: 201
+[INFO] [1715225405.324303]: taskID: 208
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.325603]: taskID: 1693
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.326849]: taskID: 209
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.328171]: taskID: 1694
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225405.329732]: taskID: 210
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225405.689079]: taskID: 1615
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225405.691622]: taskID: 1616
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225405.716646]: taskID: 498
+robotID: 8
+action: 4
+status: 201
+[INFO] [1715225405.721886]: taskID: 1119
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225405.734122]: taskID: 869
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225405.755170]: taskID: 945
+robotID: 15
+action: 4
+status: 201
+[INFO] [1715225405.757991]: taskID: 946
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225405.759122]: taskID: 3
+robotID: 0
+action: 3
+status: 201
+[INFO] [1715225405.764469]: taskID: 947
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225405.768600]: taskID: 4
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225405.771071]: taskID: 1808
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225405.771949]: taskID: 948
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225405.775939]: taskID: 5
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225405.778747]: taskID: 6
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225405.781035]: taskID: 7
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225405.783520]: taskID: 8
+robotID: 0
+action: 2
+status: 201
+[INFO] [1715225405.785290]: taskID: 9
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225405.787198]: taskID: 10
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225405.789207]: taskID: 11
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225405.792567]: taskID: 12
+robotID: 0
+action: 3
+status: 201
+[INFO] [1715225405.795489]: taskID: 13
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225405.797099]: taskID: 14
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225405.798458]: taskID: 15
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225405.799802]: taskID: 16
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225406.479028]: taskID: 1120
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225406.481889]: taskID: 1121
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225406.491356]: taskID: 870
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225406.493602]: taskID: 871
+robotID: 14
+action: 2
+status: 201
+[INFO] [1715225406.500726]: taskID: 872
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225406.503424]: taskID: 873
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225406.506070]: taskID: 874
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225406.576967]: taskID: 499
+robotID: 8
+action: 4
+status: 201
+[INFO] [1715225406.577771]: taskID: 1809
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225406.579220]: taskID: 500
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225406.579548]: taskID: 875
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225406.587261]: taskID: 501
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225406.592540]: taskID: 502
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225406.606486]: taskID: 128
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225406.657387]: taskID: 314
+robotID: 5
+action: 4
+status: 201
+[INFO] [1715225407.302370]: taskID: 68
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.304258]: taskID: 1617
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225407.305089]: taskID: 69
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.313693]: taskID: 70
+robotID: 1
+action: 4
+status: 201
+[INFO] [1715225407.317776]: taskID: 71
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.321141]: taskID: 72
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.325071]: taskID: 73
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.329663]: taskID: 74
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.333056]: taskID: 75
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.336559]: taskID: 76
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225407.337320]: taskID: 1183
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225407.385857]: taskID: 627
+robotID: 10
+action: 2
+status: 201
+[INFO] [1715225407.404438]: taskID: 503
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225407.406047]: taskID: 504
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225407.463538]: taskID: 129
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225407.485583]: taskID: 1810
+robotID: 29
+action: 1
+status: 201
+[INFO] [1715225407.487321]: taskID: 1811
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225407.490103]: taskID: 1812
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225407.492414]: taskID: 1813
+robotID: 29
+action: 3
+status: 201
+[INFO] [1715225407.494627]: taskID: 1814
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225407.497271]: taskID: 1815
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225407.500692]: taskID: 1816
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225407.503097]: taskID: 1817
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225407.505671]: taskID: 1818
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225407.566545]: taskID: 315
+robotID: 5
+action: 1
+status: 201
+[INFO] [1715225408.161833]: taskID: 1618
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225408.179909]: taskID: 1369
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225408.212623]: taskID: 1819
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225408.214567]: taskID: 1820
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225408.219306]: taskID: 1821
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225408.222236]: taskID: 1822
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225408.226294]: taskID: 1823
+robotID: 29
+action: 2
+status: 201
+[INFO] [1715225408.229378]: taskID: 1824
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.232544]: taskID: 1825
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.235207]: taskID: 1826
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.237923]: taskID: 1827
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.240971]: taskID: 1828
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.244478]: taskID: 1829
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.247256]: taskID: 1830
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.252473]: taskID: 1831
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.255702]: taskID: 1832
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.260415]: taskID: 1833
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.263223]: taskID: 1834
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.266229]: taskID: 1835
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.269170]: taskID: 1836
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.273025]: taskID: 1837
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.278141]: taskID: 1838
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.281686]: taskID: 1839
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.284705]: taskID: 1840
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.287266]: taskID: 1841
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.289968]: taskID: 1562
+robotID: 25
+action: 3
+status: 201
+[INFO] [1715225408.293277]: taskID: 1842
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.296398]: taskID: 1843
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.298594]: taskID: 1844
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.301353]: taskID: 1845
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.303640]: taskID: 1846
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.306073]: taskID: 1847
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.308987]: taskID: 1848
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.311284]: taskID: 1849
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.312469]: taskID: 751
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225408.315448]: taskID: 1850
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.317767]: taskID: 1851
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.319386]: taskID: 1852
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.320217]: taskID: 130
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225408.321556]: taskID: 1853
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.323485]: taskID: 1854
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.324975]: taskID: 1855
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.326342]: taskID: 1856
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.328097]: taskID: 1857
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.331445]: taskID: 1858
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.332895]: taskID: 1859
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.334441]: taskID: 1860
+robotID: 29
+action: 0
+status: 201
+[INFO] [1715225408.442723]: taskID: 391
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225408.443929]: taskID: 392
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225408.446240]: taskID: 393
+robotID: 6
+action: 1
+status: 201
+[INFO] [1715225408.447895]: taskID: 394
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225408.449484]: taskID: 395
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225408.451051]: taskID: 396
+robotID: 6
+action: 4
+status: 201
+[INFO] [1715225408.452588]: taskID: 397
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225408.454187]: taskID: 398
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225408.457157]: taskID: 399
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225409.037180]: taskID: 17
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225409.038893]: taskID: 18
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225409.069939]: taskID: 1619
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225409.088048]: taskID: 1370
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225409.089952]: taskID: 1371
+robotID: 22
+action: 0
+status: 201
+[INFO] [1715225409.093460]: taskID: 1372
+robotID: 22
+action: 4
+status: 201
+[INFO] [1715225409.096322]: taskID: 1563
+robotID: 25
+action: 4
+status: 201
+[INFO] [1715225409.097092]: taskID: 1373
+robotID: 22
+action: 3
+status: 201
+[INFO] [1715225409.123317]: taskID: 255
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225409.126924]: taskID: 131
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225409.128940]: taskID: 132
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225409.133698]: taskID: 133
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225409.136612]: taskID: 134
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225409.139616]: taskID: 135
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225409.143313]: taskID: 136
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225409.146252]: taskID: 137
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225409.150135]: taskID: 138
+robotID: 2
+action: 1
+status: 201
+[INFO] [1715225409.152772]: taskID: 139
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225409.155022]: taskID: 140
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225409.157256]: taskID: 141
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225409.218473]: taskID: 752
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225409.299154]: taskID: 1431
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.301219]: taskID: 1432
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.306976]: taskID: 1433
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.310964]: taskID: 1434
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.313539]: taskID: 1435
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.315735]: taskID: 1436
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.317926]: taskID: 1437
+robotID: 23
+action: 2
+status: 201
+[INFO] [1715225409.363719]: taskID: 949
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225409.707546]: taskID: 1184
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225409.852935]: taskID: 440
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225409.854603]: taskID: 441
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.858773]: taskID: 442
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.863168]: taskID: 443
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.866436]: taskID: 444
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.868697]: taskID: 445
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.870905]: taskID: 446
+robotID: 7
+action: 0
+status: 201
+[INFO] [1715225409.873667]: taskID: 447
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.876292]: taskID: 448
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225409.880387]: taskID: 449
+robotID: 7
+action: 0
+status: 201
+[INFO] [1715225409.882929]: taskID: 450
+robotID: 7
+action: 0
+status: 201
+[INFO] [1715225409.885824]: taskID: 451
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225409.888244]: taskID: 452
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225409.890301]: taskID: 453
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.892445]: taskID: 454
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.894956]: taskID: 19
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225409.897682]: taskID: 455
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.901589]: taskID: 20
+robotID: 0
+action: 3
+status: 201
+[INFO] [1715225409.904428]: taskID: 456
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.907035]: taskID: 457
+robotID: 7
+action: 0
+status: 201
+[INFO] [1715225409.910479]: taskID: 458
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225409.974657]: taskID: 753
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225409.976136]: taskID: 754
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225409.981323]: taskID: 755
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225409.983916]: taskID: 756
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225409.986486]: taskID: 757
+robotID: 12
+action: 4
+status: 201
+[INFO] [1715225409.988954]: taskID: 758
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225409.991087]: taskID: 759
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225409.995236]: taskID: 760
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225409.999002]: taskID: 761
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225410.001770]: taskID: 762
+robotID: 12
+action: 1
+status: 201
+[INFO] [1715225410.004216]: taskID: 763
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225410.030718]: taskID: 256
+robotID: 4
+action: 2
+status: 201
+[INFO] [1715225410.032667]: taskID: 257
+robotID: 4
+action: 4
+status: 201
+[INFO] [1715225410.035546]: taskID: 258
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225410.039161]: taskID: 259
+robotID: 4
+action: 4
+status: 201
+[INFO] [1715225410.042070]: taskID: 260
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225410.045269]: taskID: 261
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225410.047729]: taskID: 262
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225410.050062]: taskID: 263
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225410.271168]: taskID: 950
+robotID: 15
+action: 2
+status: 201
+[INFO] [1715225410.272905]: taskID: 951
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225410.276858]: taskID: 952
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225410.279934]: taskID: 953
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225410.282872]: taskID: 954
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225410.471850]: taskID: 1695
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225410.474425]: taskID: 1122
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.476859]: taskID: 1123
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225410.482649]: taskID: 1124
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225410.486240]: taskID: 1125
+robotID: 18
+action: 2
+status: 201
+[INFO] [1715225410.489342]: taskID: 1126
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225410.492751]: taskID: 1127
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225410.497153]: taskID: 1128
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225410.500514]: taskID: 1129
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225410.503464]: taskID: 1130
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225410.506392]: taskID: 1131
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225410.509469]: taskID: 1132
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.514125]: taskID: 1133
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225410.517956]: taskID: 1134
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225410.520064]: taskID: 1135
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.523118]: taskID: 1136
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.526009]: taskID: 1137
+robotID: 18
+action: 3
+status: 201
+[INFO] [1715225410.530583]: taskID: 1138
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.532494]: taskID: 1139
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.534171]: taskID: 1140
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.535792]: taskID: 1141
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.537407]: taskID: 1142
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.538892]: taskID: 1143
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225410.564236]: taskID: 1185
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225410.565734]: taskID: 1186
+robotID: 19
+action: 4
+status: 201
+[INFO] [1715225410.568894]: taskID: 1187
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225410.570633]: taskID: 1188
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225410.572226]: taskID: 1189
+robotID: 19
+action: 1
+status: 201
+[INFO] [1715225410.591257]: taskID: 1308
+robotID: 21
+action: 2
+status: 201
+[INFO] [1715225410.592543]: taskID: 1309
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225410.594686]: taskID: 1310
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225410.596846]: taskID: 1311
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225410.601218]: taskID: 1312
+robotID: 21
+action: 0
+status: 201
+[INFO] [1715225410.602983]: taskID: 1313
+robotID: 21
+action: 0
+status: 201
+[INFO] [1715225410.604562]: taskID: 1314
+robotID: 21
+action: 4
+status: 201
+[INFO] [1715225410.606145]: taskID: 1315
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225410.607693]: taskID: 1316
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225410.609874]: taskID: 1317
+robotID: 21
+action: 1
+status: 201
+[INFO] [1715225410.631914]: taskID: 1620
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225410.752046]: taskID: 813
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225410.780697]: taskID: 764
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225411.328465]: taskID: 1696
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225411.387652]: taskID: 1621
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225411.390114]: taskID: 1622
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225411.394362]: taskID: 1623
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225411.398347]: taskID: 1624
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225411.401323]: taskID: 1625
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225411.459425]: taskID: 505
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225411.461357]: taskID: 506
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225411.465590]: taskID: 507
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225411.468723]: taskID: 508
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225411.531121]: taskID: 21
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225411.532971]: taskID: 22
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225411.647077]: taskID: 1257
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225411.649141]: taskID: 1258
+robotID: 20
+action: 1
+status: 201
+[INFO] [1715225411.652051]: taskID: 1259
+robotID: 20
+action: 1
+status: 201
+[INFO] [1715225411.654361]: taskID: 1260
+robotID: 20
+action: 1
+status: 201
+[INFO] [1715225411.657112]: taskID: 1261
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225411.660933]: taskID: 1262
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225411.661345]: taskID: 814
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225411.665126]: taskID: 1263
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225411.668908]: taskID: 1264
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225411.672571]: taskID: 1265
+robotID: 20
+action: 2
+status: 201
+[INFO] [1715225411.675653]: taskID: 1266
+robotID: 20
+action: 0
+status: 201
+[INFO] [1715225411.687753]: taskID: 765
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225411.844362]: taskID: 509
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225412.138079]: taskID: 628
+robotID: 10
+action: 4
+status: 201
+[INFO] [1715225412.139287]: taskID: 629
+robotID: 10
+action: 1
+status: 201
+[INFO] [1715225412.185439]: taskID: 1697
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225412.488368]: taskID: 23
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225412.569779]: taskID: 815
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225412.571733]: taskID: 816
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225412.594378]: taskID: 766
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225412.596596]: taskID: 767
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225412.752077]: taskID: 510
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225412.754493]: taskID: 511
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225412.777191]: taskID: 1074
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225412.779443]: taskID: 1075
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225412.785724]: taskID: 1076
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225412.789105]: taskID: 1077
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225412.793283]: taskID: 1078
+robotID: 17
+action: 4
+status: 201
+[INFO] [1715225412.797637]: taskID: 1079
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225412.826923]: taskID: 1006
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225412.833200]: taskID: 876
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225412.835562]: taskID: 877
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225412.839172]: taskID: 878
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225412.992552]: taskID: 1698
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225413.073019]: taskID: 1626
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225413.074523]: taskID: 1627
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225413.129115]: taskID: 1080
+robotID: 17
+action: 4
+status: 201
+[INFO] [1715225413.395147]: taskID: 24
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225413.476932]: taskID: 1374
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225413.478873]: taskID: 1375
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225413.482023]: taskID: 1376
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225413.502403]: taskID: 768
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225413.503863]: taskID: 769
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225413.638044]: taskID: 879
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225413.639850]: taskID: 880
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225413.643717]: taskID: 881
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225413.647392]: taskID: 882
+robotID: 14
+action: 2
+status: 201
+[INFO] [1715225413.650379]: taskID: 883
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225413.658837]: taskID: 512
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225413.852670]: taskID: 630
+robotID: 10
+action: 4
+status: 201
+[INFO] [1715225413.853395]: taskID: 1699
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225413.885984]: taskID: 1081
+robotID: 17
+action: 4
+status: 201
+[INFO] [1715225413.889464]: taskID: 1082
+robotID: 17
+action: 0
+status: 201
+[INFO] [1715225413.894518]: taskID: 1083
+robotID: 17
+action: 3
+status: 201
+[INFO] [1715225413.898384]: taskID: 1084
+robotID: 17
+action: 2
+status: 201
+[INFO] [1715225413.902708]: taskID: 1085
+robotID: 17
+action: 4
+status: 201
+[INFO] [1715225413.984234]: taskID: 77
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225414.111025]: taskID: 1377
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225414.273402]: taskID: 459
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225414.275323]: taskID: 460
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225414.279296]: taskID: 461
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225414.442267]: taskID: 884
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225414.560732]: taskID: 1700
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225414.760449]: taskID: 631
+robotID: 10
+action: 1
+status: 201
+[INFO] [1715225415.018948]: taskID: 1378
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225415.097838]: taskID: 817
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.099597]: taskID: 818
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.104690]: taskID: 819
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225415.107298]: taskID: 820
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.109893]: taskID: 821
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.112642]: taskID: 822
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.115387]: taskID: 823
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.118457]: taskID: 824
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225415.124520]: taskID: 825
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225415.127285]: taskID: 826
+robotID: 13
+action: 0
+status: 201
+[INFO] [1715225415.130243]: taskID: 827
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225415.135406]: taskID: 828
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225415.138330]: taskID: 829
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225415.141553]: taskID: 830
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225415.144325]: taskID: 831
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225415.146858]: taskID: 832
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225415.301056]: taskID: 885
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225415.367248]: taskID: 211
+robotID: 3
+action: 1
+status: 201
+[INFO] [1715225415.369207]: taskID: 212
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225415.374487]: taskID: 213
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225415.377460]: taskID: 214
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225415.380358]: taskID: 215
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225415.383120]: taskID: 216
+robotID: 3
+action: 4
+status: 201
+[INFO] [1715225415.676565]: taskID: 1503
+robotID: 24
+action: 2
+status: 201
+[INFO] [1715225415.678485]: taskID: 1504
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225415.683338]: taskID: 1505
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225415.686437]: taskID: 1506
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225415.689320]: taskID: 1507
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225415.692224]: taskID: 1508
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225415.696271]: taskID: 1509
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225415.699682]: taskID: 1510
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225415.704021]: taskID: 1511
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225415.864289]: taskID: 25
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225415.866309]: taskID: 26
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225415.872368]: taskID: 27
+robotID: 0
+action: 4
+status: 201
+[INFO] [1715225415.876563]: taskID: 28
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225415.930811]: taskID: 1379
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225415.980161]: taskID: 770
+robotID: 12
+action: 2
+status: 201
+[INFO] [1715225415.982139]: taskID: 771
+robotID: 12
+action: 3
+status: 201
+[INFO] [1715225415.988171]: taskID: 772
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225416.032861]: taskID: 513
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.100741]: taskID: 264
+robotID: 4
+action: 2
+status: 201
+[INFO] [1715225416.112238]: taskID: 886
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225416.737067]: taskID: 1380
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225416.796504]: taskID: 1007
+robotID: 16
+action: 1
+status: 201
+[INFO] [1715225416.858129]: taskID: 78
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225416.860132]: taskID: 79
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225416.865783]: taskID: 80
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225416.869013]: taskID: 81
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225416.871988]: taskID: 82
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225416.875792]: taskID: 83
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225416.900903]: taskID: 955
+robotID: 15
+action: 4
+status: 201
+[INFO] [1715225416.902370]: taskID: 956
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225416.905611]: taskID: 957
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225416.908667]: taskID: 958
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225416.914369]: taskID: 84
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225416.944754]: taskID: 514
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.950778]: taskID: 515
+robotID: 8
+action: 4
+status: 201
+[INFO] [1715225416.961691]: taskID: 516
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.969148]: taskID: 517
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.971984]: taskID: 887
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225416.975833]: taskID: 518
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225416.979823]: taskID: 519
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225416.983133]: taskID: 520
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.985688]: taskID: 521
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.988673]: taskID: 522
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.991177]: taskID: 523
+robotID: 8
+action: 4
+status: 201
+[INFO] [1715225416.993010]: taskID: 524
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.994687]: taskID: 525
+robotID: 8
+action: 2
+status: 201
+[INFO] [1715225416.996529]: taskID: 526
+robotID: 8
+action: 1
+status: 201
+[INFO] [1715225416.998202]: taskID: 527
+robotID: 8
+action: 2
+status: 201
+[INFO] [1715225416.999876]: taskID: 528
+robotID: 8
+action: 2
+status: 201
+[INFO] [1715225417.001854]: taskID: 529
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.004890]: taskID: 530
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.007508]: taskID: 531
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.008087]: taskID: 265
+robotID: 4
+action: 1
+status: 201
+[INFO] [1715225417.010161]: taskID: 532
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.013785]: taskID: 533
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.015675]: taskID: 534
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.017601]: taskID: 535
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.021815]: taskID: 536
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.023763]: taskID: 537
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.025803]: taskID: 538
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.027649]: taskID: 539
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.029509]: taskID: 540
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.031064]: taskID: 541
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.032726]: taskID: 542
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.034409]: taskID: 543
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.036042]: taskID: 544
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.037760]: taskID: 545
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.043743]: taskID: 546
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.046003]: taskID: 547
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.049366]: taskID: 548
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.051586]: taskID: 549
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.053435]: taskID: 550
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.055060]: taskID: 551
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.056727]: taskID: 552
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.058367]: taskID: 553
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.060138]: taskID: 554
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.063001]: taskID: 555
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.065690]: taskID: 556
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.067455]: taskID: 557
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.069234]: taskID: 558
+robotID: 8
+action: 0
+status: 201
+[INFO] [1715225417.082334]: taskID: 1701
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225417.101089]: taskID: 1628
+robotID: 26
+action: 4
+status: 201
+[INFO] [1715225417.102410]: taskID: 1629
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225417.104831]: taskID: 1630
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225417.106661]: taskID: 1631
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225417.108832]: taskID: 1632
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.111153]: taskID: 1633
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.114632]: taskID: 1634
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.116455]: taskID: 1635
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.118128]: taskID: 1636
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.119831]: taskID: 1637
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.121637]: taskID: 1638
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225417.146020]: taskID: 142
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225417.147514]: taskID: 143
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225417.149899]: taskID: 144
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225417.151602]: taskID: 145
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225417.153267]: taskID: 146
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225417.154889]: taskID: 147
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.156504]: taskID: 148
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.158136]: taskID: 149
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.160910]: taskID: 150
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.163699]: taskID: 151
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.165639]: taskID: 152
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.167449]: taskID: 153
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.169601]: taskID: 154
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.171467]: taskID: 155
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.173630]: taskID: 156
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.175960]: taskID: 157
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.178953]: taskID: 158
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225417.181227]: taskID: 159
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225417.602815]: taskID: 1008
+robotID: 16
+action: 2
+status: 201
+[INFO] [1715225417.698257]: taskID: 1381
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225417.778044]: taskID: 888
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225417.779702]: taskID: 889
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225417.785253]: taskID: 890
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225417.820825]: taskID: 85
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225417.848473]: taskID: 773
+robotID: 12
+action: 3
+status: 201
+[INFO] [1715225417.850955]: taskID: 774
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.855011]: taskID: 775
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.857489]: taskID: 776
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.859897]: taskID: 777
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.862261]: taskID: 778
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.864741]: taskID: 779
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.869021]: taskID: 780
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.872155]: taskID: 781
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.874804]: taskID: 782
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.877453]: taskID: 783
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.880942]: taskID: 784
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.884102]: taskID: 785
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.887234]: taskID: 786
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.889754]: taskID: 787
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.892333]: taskID: 788
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.894592]: taskID: 789
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.897218]: taskID: 790
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.900376]: taskID: 791
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.903389]: taskID: 792
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.905980]: taskID: 793
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.908851]: taskID: 794
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.911361]: taskID: 795
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.916392]: taskID: 796
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.919416]: taskID: 797
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.921998]: taskID: 798
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.924344]: taskID: 799
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.926694]: taskID: 800
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.929270]: taskID: 801
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.932748]: taskID: 802
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.935973]: taskID: 803
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.938668]: taskID: 804
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.941013]: taskID: 805
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.944089]: taskID: 806
+robotID: 12
+action: 0
+status: 201
+[INFO] [1715225417.989331]: taskID: 1702
+robotID: 27
+action: 1
+status: 201
+[INFO] [1715225418.409935]: taskID: 1009
+robotID: 16
+action: 3
+status: 201
+[INFO] [1715225418.606163]: taskID: 1382
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225418.608643]: taskID: 1383
+robotID: 22
+action: 0
+status: 201
+[INFO] [1715225418.708192]: taskID: 400
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225418.709981]: taskID: 401
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225418.714290]: taskID: 402
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225418.718875]: taskID: 403
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225418.722265]: taskID: 404
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225418.725170]: taskID: 405
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225418.727726]: taskID: 86
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225418.795561]: taskID: 1703
+robotID: 27
+action: 1
+status: 201
+[INFO] [1715225418.797155]: taskID: 1704
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225419.266827]: taskID: 1010
+robotID: 16
+action: 3
+status: 201
+[INFO] [1715225419.413662]: taskID: 1384
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225419.497862]: taskID: 266
+robotID: 4
+action: 2
+status: 201
+[INFO] [1715225419.500899]: taskID: 267
+robotID: 4
+action: 4
+status: 201
+[INFO] [1715225419.504513]: taskID: 268
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225419.507537]: taskID: 269
+robotID: 4
+action: 4
+status: 201
+[INFO] [1715225419.511994]: taskID: 270
+robotID: 4
+action: 1
+status: 201
+[INFO] [1715225419.515454]: taskID: 271
+robotID: 4
+action: 2
+status: 201
+[INFO] [1715225419.518998]: taskID: 272
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225419.521628]: taskID: 29
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225419.523671]: taskID: 273
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225419.527615]: taskID: 30
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225419.531039]: taskID: 274
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225419.539261]: taskID: 31
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225419.542650]: taskID: 32
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225419.546461]: taskID: 33
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225419.551194]: taskID: 34
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225419.554078]: taskID: 35
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225419.635524]: taskID: 87
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225419.653117]: taskID: 1705
+robotID: 27
+action: 4
+status: 201
+[INFO] [1715225419.654883]: taskID: 1706
+robotID: 27
+action: 2
+status: 201
+[INFO] [1715225419.772068]: taskID: 833
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225420.125363]: taskID: 1011
+robotID: 16
+action: 3
+status: 201
+[INFO] [1715225420.199650]: taskID: 891
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225420.321457]: taskID: 1385
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225420.329013]: taskID: 275
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225420.331217]: taskID: 276
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225420.387714]: taskID: 1639
+robotID: 26
+action: 2
+status: 201
+[INFO] [1715225420.389466]: taskID: 1640
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225420.392957]: taskID: 88
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.395951]: taskID: 89
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.400873]: taskID: 90
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.404106]: taskID: 91
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.408063]: taskID: 92
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.412004]: taskID: 93
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.415011]: taskID: 94
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.417795]: taskID: 95
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225420.419791]: taskID: 96
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225420.421708]: taskID: 97
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225420.423507]: taskID: 98
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.425312]: taskID: 99
+robotID: 1
+action: 3
+status: 201
+[INFO] [1715225420.427059]: taskID: 100
+robotID: 1
+action: 2
+status: 201
+[INFO] [1715225420.577947]: taskID: 834
+robotID: 13
+action: 3
+status: 201
+[INFO] [1715225420.820545]: taskID: 462
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225420.831641]: taskID: 1012
+robotID: 16
+action: 3
+status: 201
+[INFO] [1715225420.834738]: taskID: 1013
+robotID: 16
+action: 3
+status: 201
+[INFO] [1715225420.838301]: taskID: 1014
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.840888]: taskID: 1015
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.843076]: taskID: 1016
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.844985]: taskID: 1017
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.847084]: taskID: 1018
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.849154]: taskID: 1019
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.851482]: taskID: 1020
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.855246]: taskID: 1021
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.856921]: taskID: 1022
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.858490]: taskID: 1023
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.859914]: taskID: 1024
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.861436]: taskID: 1025
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.862727]: taskID: 1026
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.864063]: taskID: 1027
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.865367]: taskID: 1028
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.870414]: taskID: 1029
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.871957]: taskID: 1030
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.873430]: taskID: 1031
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.874820]: taskID: 1032
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.876267]: taskID: 1033
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.877659]: taskID: 1034
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.879061]: taskID: 1035
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.880617]: taskID: 1036
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.882017]: taskID: 1037
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.885691]: taskID: 1038
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.887835]: taskID: 1039
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.889391]: taskID: 1040
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.890766]: taskID: 1041
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.892136]: taskID: 1042
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.893539]: taskID: 1043
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.894935]: taskID: 1044
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.896381]: taskID: 1045
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.897741]: taskID: 1046
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.899338]: taskID: 1047
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.901589]: taskID: 1048
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.903987]: taskID: 1049
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.905522]: taskID: 1050
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.906830]: taskID: 1051
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.908156]: taskID: 1052
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.909705]: taskID: 1053
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.911322]: taskID: 1054
+robotID: 16
+action: 0
+status: 201
+[INFO] [1715225420.936210]: taskID: 1144
+robotID: 18
+action: 1
+status: 201
+[INFO] [1715225421.006072]: taskID: 892
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225421.135861]: taskID: 277
+robotID: 4
+action: 3
+status: 201
+[INFO] [1715225421.230659]: taskID: 1386
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225421.233118]: taskID: 1387
+robotID: 22
+action: 0
+status: 201
+[INFO] [1715225421.347969]: taskID: 1641
+robotID: 26
+action: 1
+status: 201
+[INFO] [1715225421.403525]: taskID: 217
+robotID: 3
+action: 1
+status: 201
+[INFO] [1715225421.405167]: taskID: 218
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225421.416675]: taskID: 278
+robotID: 4
+action: 4
+status: 201
+[INFO] [1715225421.419016]: taskID: 279
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.422621]: taskID: 280
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.425230]: taskID: 281
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.427553]: taskID: 282
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.431591]: taskID: 283
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.434710]: taskID: 284
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.437161]: taskID: 285
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.439389]: taskID: 286
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.441814]: taskID: 287
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.443975]: taskID: 288
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.446089]: taskID: 289
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.448789]: taskID: 290
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.452217]: taskID: 291
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.454677]: taskID: 292
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.456897]: taskID: 293
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.459015]: taskID: 294
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.461917]: taskID: 295
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.464571]: taskID: 296
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.468145]: taskID: 297
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.471134]: taskID: 298
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.473476]: taskID: 299
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.475646]: taskID: 300
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.477973]: taskID: 301
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.480790]: taskID: 302
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.483899]: taskID: 303
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.486422]: taskID: 304
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.489124]: taskID: 305
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.491310]: taskID: 306
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.495280]: taskID: 307
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.500034]: taskID: 308
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.502792]: taskID: 309
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.505076]: taskID: 310
+robotID: 4
+action: 0
+status: 201
+[INFO] [1715225421.727087]: taskID: 463
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225421.742509]: taskID: 1145
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225421.862398]: taskID: 893
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225422.042195]: taskID: 1707
+robotID: 27
+action: 1
+status: 201
+[INFO] [1715225422.137181]: taskID: 1388
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225422.211598]: taskID: 219
+robotID: 3
+action: 4
+status: 201
+[INFO] [1715225422.213665]: taskID: 220
+robotID: 3
+action: 3
+status: 201
+[INFO] [1715225422.219018]: taskID: 221
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225422.223670]: taskID: 222
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225422.224868]: taskID: 406
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225422.229377]: taskID: 223
+robotID: 3
+action: 2
+status: 201
+[INFO] [1715225422.235306]: taskID: 407
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225422.238855]: taskID: 224
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225422.243594]: taskID: 408
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225422.246253]: taskID: 225
+robotID: 3
+action: 0
+status: 201
+[INFO] [1715225422.248832]: taskID: 409
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.251055]: taskID: 226
+robotID: 3
+action: 3
+status: 201
+[INFO] [1715225422.253273]: taskID: 410
+robotID: 6
+action: 3
+status: 201
+[INFO] [1715225422.256826]: taskID: 411
+robotID: 6
+action: 2
+status: 201
+[INFO] [1715225422.260214]: taskID: 412
+robotID: 6
+action: 2
+status: 201
+[INFO] [1715225422.262871]: taskID: 413
+robotID: 6
+action: 2
+status: 201
+[INFO] [1715225422.266040]: taskID: 414
+robotID: 6
+action: 2
+status: 201
+[INFO] [1715225422.268685]: taskID: 415
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.271547]: taskID: 416
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.275415]: taskID: 417
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.278200]: taskID: 418
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.280809]: taskID: 419
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.283655]: taskID: 420
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.286196]: taskID: 421
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.288634]: taskID: 422
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.291004]: taskID: 423
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.294220]: taskID: 424
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.298646]: taskID: 425
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.301091]: taskID: 426
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.303269]: taskID: 427
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.305789]: taskID: 428
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.308205]: taskID: 429
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.310503]: taskID: 430
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.314658]: taskID: 431
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.317083]: taskID: 432
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.319407]: taskID: 433
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.321832]: taskID: 434
+robotID: 6
+action: 0
+status: 201
+[INFO] [1715225422.601005]: taskID: 1146
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225422.602932]: taskID: 1147
+robotID: 18
+action: 1
+status: 201
+[INFO] [1715225422.606954]: taskID: 1148
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.610638]: taskID: 1149
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.613976]: taskID: 1150
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225422.616905]: taskID: 1151
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225422.619883]: taskID: 1152
+robotID: 18
+action: 4
+status: 201
+[INFO] [1715225422.623509]: taskID: 1153
+robotID: 18
+action: 1
+status: 201
+[INFO] [1715225422.626491]: taskID: 1154
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.629249]: taskID: 1155
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.631521]: taskID: 1156
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.633766]: taskID: 464
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225422.635804]: taskID: 1157
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.639753]: taskID: 1158
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.643087]: taskID: 1159
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.645763]: taskID: 1160
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.648157]: taskID: 1161
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.652016]: taskID: 1162
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.655575]: taskID: 1163
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.658200]: taskID: 1164
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.660777]: taskID: 1165
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.663261]: taskID: 1166
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.665900]: taskID: 1167
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.669171]: taskID: 1168
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.673107]: taskID: 1169
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.675942]: taskID: 1170
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.678975]: taskID: 1171
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.681309]: taskID: 1172
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.684646]: taskID: 1173
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.688891]: taskID: 1174
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.691654]: taskID: 1175
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.693780]: taskID: 1176
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.696102]: taskID: 1177
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.698280]: taskID: 1178
+robotID: 18
+action: 0
+status: 201
+[INFO] [1715225422.722166]: taskID: 894
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225422.948824]: taskID: 1708
+robotID: 27
+action: 2
+status: 201
+[INFO] [1715225423.047600]: taskID: 1389
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225423.067775]: taskID: 1512
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225423.070096]: taskID: 1513
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225423.074880]: taskID: 1514
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225423.077487]: taskID: 1515
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225423.155394]: taskID: 36
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225423.491508]: taskID: 465
+robotID: 7
+action: 1
+status: 201
+[INFO] [1715225423.528479]: taskID: 895
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225423.849833]: taskID: 835
+robotID: 13
+action: 3
+status: 201
+[INFO] [1715225423.856714]: taskID: 1709
+robotID: 27
+action: 2
+status: 201
+[INFO] [1715225423.858342]: taskID: 1710
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.861346]: taskID: 1711
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.863887]: taskID: 1712
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.866510]: taskID: 1713
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.869546]: taskID: 1714
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.873363]: taskID: 1715
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.875817]: taskID: 1716
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.878036]: taskID: 1717
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.880272]: taskID: 1718
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.882560]: taskID: 1719
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.885408]: taskID: 1720
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.888844]: taskID: 1721
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.891478]: taskID: 1722
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.894198]: taskID: 1723
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.896971]: taskID: 1724
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.899457]: taskID: 1725
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.903757]: taskID: 1726
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.906199]: taskID: 1727
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.908571]: taskID: 1728
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.911130]: taskID: 1729
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.911913]: taskID: 37
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225423.914364]: taskID: 1730
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.917551]: taskID: 38
+robotID: 0
+action: 1
+status: 201
+[INFO] [1715225423.922728]: taskID: 1731
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.925383]: taskID: 39
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.928042]: taskID: 1732
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.930611]: taskID: 40
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.935586]: taskID: 1733
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.939339]: taskID: 41
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.941849]: taskID: 1734
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.944132]: taskID: 42
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.946538]: taskID: 1735
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.948750]: taskID: 43
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.951142]: taskID: 1736
+robotID: 27
+action: 0
+status: 201
+[INFO] [1715225423.954582]: taskID: 44
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.955027]: taskID: 1390
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225423.959308]: taskID: 45
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.964269]: taskID: 46
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.966747]: taskID: 47
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.969548]: taskID: 48
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.971906]: taskID: 49
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.974581]: taskID: 50
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.977228]: taskID: 51
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.981309]: taskID: 52
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.984081]: taskID: 53
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.986569]: taskID: 54
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.989099]: taskID: 55
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.991516]: taskID: 56
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.995349]: taskID: 57
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.997269]: taskID: 58
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225423.999041]: taskID: 59
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225424.000903]: taskID: 60
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225424.002702]: taskID: 61
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225424.004396]: taskID: 62
+robotID: 0
+action: 0
+status: 201
+[INFO] [1715225424.385758]: taskID: 896
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225424.399127]: taskID: 466
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225424.492879]: taskID: 1642
+robotID: 26
+action: 2
+status: 201
+[INFO] [1715225424.496263]: taskID: 1643
+robotID: 26
+action: 2
+status: 201
+[INFO] [1715225424.499796]: taskID: 1644
+robotID: 26
+action: 2
+status: 201
+[INFO] [1715225424.502842]: taskID: 1645
+robotID: 26
+action: 2
+status: 201
+[INFO] [1715225424.507005]: taskID: 1646
+robotID: 26
+action: 2
+status: 201
+[INFO] [1715225424.511719]: taskID: 1647
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.514721]: taskID: 1648
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.516947]: taskID: 1649
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.519120]: taskID: 1650
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.522972]: taskID: 1651
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.528045]: taskID: 1652
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.530598]: taskID: 1653
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.532883]: taskID: 1654
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.535519]: taskID: 1655
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.538775]: taskID: 1656
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.541981]: taskID: 1657
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.543848]: taskID: 1658
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.545778]: taskID: 1659
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.547589]: taskID: 1660
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.549530]: taskID: 1661
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.551506]: taskID: 1662
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.553629]: taskID: 1663
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.556892]: taskID: 1664
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.559200]: taskID: 1665
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.561660]: taskID: 1666
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.563774]: taskID: 1667
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.566299]: taskID: 1668
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.568514]: taskID: 1669
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.570962]: taskID: 1670
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.575111]: taskID: 1671
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.577157]: taskID: 1672
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.578793]: taskID: 1673
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.580573]: taskID: 1674
+robotID: 26
+action: 0
+status: 201
+[INFO] [1715225424.656861]: taskID: 836
+robotID: 13
+action: 3
+status: 201
+[INFO] [1715225424.658218]: taskID: 837
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225424.810963]: taskID: 1391
+robotID: 22
+action: 2
+status: 201
+[INFO] [1715225424.882887]: taskID: 838
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225425.142229]: taskID: 897
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225425.145359]: taskID: 898
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225425.149350]: taskID: 899
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225425.306174]: taskID: 467
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225425.718212]: taskID: 1392
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225425.791894]: taskID: 839
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225426.213694]: taskID: 468
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225426.626260]: taskID: 1393
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225426.701073]: taskID: 840
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225427.013459]: taskID: 160
+robotID: 2
+action: 4
+status: 201
+[INFO] [1715225427.015424]: taskID: 161
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225427.122044]: taskID: 469
+robotID: 7
+action: 2
+status: 201
+[INFO] [1715225427.439470]: taskID: 1516
+robotID: 24
+action: 3
+status: 201
+[INFO] [1715225427.533076]: taskID: 1394
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225427.608511]: taskID: 841
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225427.613301]: taskID: 1086
+robotID: 17
+action: 1
+status: 201
+[INFO] [1715225427.616578]: taskID: 1087
+robotID: 17
+action: 2
+status: 201
+[INFO] [1715225427.870957]: taskID: 162
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225428.341099]: taskID: 900
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.342887]: taskID: 901
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.346587]: taskID: 1517
+robotID: 24
+action: 2
+status: 201
+[INFO] [1715225428.350648]: taskID: 902
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.355777]: taskID: 903
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.358831]: taskID: 904
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.361651]: taskID: 905
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.364707]: taskID: 906
+robotID: 14
+action: 1
+status: 201
+[INFO] [1715225428.368605]: taskID: 907
+robotID: 14
+action: 1
+status: 201
+[INFO] [1715225428.372435]: taskID: 908
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.376673]: taskID: 909
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.379890]: taskID: 910
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.384121]: taskID: 911
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.387292]: taskID: 912
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225428.390124]: taskID: 913
+robotID: 14
+action: 3
+status: 201
+[INFO] [1715225428.392799]: taskID: 914
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.395522]: taskID: 915
+robotID: 14
+action: 4
+status: 201
+[INFO] [1715225428.401570]: taskID: 916
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.404790]: taskID: 917
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.408018]: taskID: 918
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.410151]: taskID: 919
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.413693]: taskID: 920
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.416682]: taskID: 959
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225428.419613]: taskID: 921
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.424124]: taskID: 922
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.426969]: taskID: 923
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.430270]: taskID: 924
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.435386]: taskID: 925
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.438647]: taskID: 926
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.441230]: taskID: 927
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.441962]: taskID: 1395
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225428.444939]: taskID: 928
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.449783]: taskID: 929
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.452169]: taskID: 930
+robotID: 14
+action: 0
+status: 201
+[INFO] [1715225428.676929]: taskID: 163
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225429.253154]: taskID: 1518
+robotID: 24
+action: 2
+status: 201
+[INFO] [1715225429.323467]: taskID: 960
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225429.348073]: taskID: 1396
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225429.350216]: taskID: 1397
+robotID: 22
+action: 0
+status: 201
+[INFO] [1715225429.353695]: taskID: 1398
+robotID: 22
+action: 0
+status: 201
+[INFO] [1715225429.357182]: taskID: 1399
+robotID: 22
+action: 0
+status: 201
+[INFO] [1715225429.534908]: taskID: 164
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225430.161642]: taskID: 1519
+robotID: 24
+action: 2
+status: 201
+[INFO] [1715225430.164197]: taskID: 842
+robotID: 13
+action: 2
+status: 201
+[INFO] [1715225430.205345]: taskID: 1400
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225430.207277]: taskID: 1401
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225430.212199]: taskID: 1402
+robotID: 22
+action: 1
+status: 201
+[INFO] [1715225430.230830]: taskID: 961
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225430.392427]: taskID: 165
+robotID: 2
+action: 3
+status: 201
+[INFO] [1715225430.394846]: taskID: 166
+robotID: 2
+action: 0
+status: 201
+[INFO] [1715225431.070127]: taskID: 1520
+robotID: 24
+action: 2
+status: 201
+[INFO] [1715225431.071753]: taskID: 1521
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.072186]: taskID: 843
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225431.076857]: taskID: 1522
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.080971]: taskID: 1523
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.083326]: taskID: 1524
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.085725]: taskID: 1525
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.088373]: taskID: 1526
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.091041]: taskID: 1527
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.095104]: taskID: 1528
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.099384]: taskID: 1529
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.102074]: taskID: 1530
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.104706]: taskID: 1531
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.107181]: taskID: 1532
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.109608]: taskID: 1533
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.113084]: taskID: 1534
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.116304]: taskID: 1535
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.119678]: taskID: 1536
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.122377]: taskID: 1537
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.124979]: taskID: 1538
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.128612]: taskID: 1539
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.132094]: taskID: 1540
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.134747]: taskID: 1541
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.137095]: taskID: 1542
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.138996]: taskID: 962
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225431.140890]: taskID: 1543
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.144606]: taskID: 1544
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.149177]: taskID: 1545
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.153196]: taskID: 1546
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.155965]: taskID: 1547
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.159532]: taskID: 1548
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.163199]: taskID: 1549
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.165474]: taskID: 1550
+robotID: 24
+action: 0
+status: 201
+[INFO] [1715225431.980981]: taskID: 844
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225432.047859]: taskID: 963
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225432.051055]: taskID: 964
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225432.055705]: taskID: 965
+robotID: 15
+action: 0
+status: 201
+[INFO] [1715225432.890242]: taskID: 845
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225433.062583]: taskID: 966
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225433.903823]: taskID: 846
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225433.970142]: taskID: 967
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225434.812202]: taskID: 847
+robotID: 13
+action: 1
+status: 201
+[INFO] [1715225434.878908]: taskID: 968
+robotID: 15
+action: 1
+status: 201
+[INFO] [1715225435.720515]: taskID: 848
+robotID: 13
+action: 1
+status: 201

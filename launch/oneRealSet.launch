@@ -1,0 +1,29 @@
+<launch>
+  <arg name="robot_name" default="0" />
+  <arg name="robot_real_id" default="0" />
+  <arg name="robot_IP" default="asd" />
+  <arg name="pose_x" default="6.5" />
+  <arg name="pose_y" default="1.5" />
+  <arg name="goal_x" default="6.25" />
+  <arg name="goal_y" default="1.25" />
+  <arg name="color" default="Grey"/>
+
+  <include file="$(find marmot)/launch/oneRealRobot.launch">
+    <arg name="robot_name" value="$(arg robot_name)" />
+    <arg name="robot_real_id" value="$(arg robot_real_id)" />
+    <arg name="robot_IP" value="$(arg robot_IP)" />
+    <arg name="startX" value="$(arg pose_x)"/>
+    <arg name="startY" value="$(arg pose_y)"/>
+    <arg name="robot_color" value="$(arg color)"/>
+  </include>
+
+  <include file="$(find marmot)/launch/spawnGoalPole.launch">
+    <arg name="robot_name" value="$(arg robot_name)" />
+    <arg name="pose_x" value="$(arg goal_x)" />
+    <arg name="pose_y" value="$(arg goal_y)" />
+    <!-- <arg name="pose_x" value="$(arg pose_x)" /> -->
+    <!-- <arg name="pose_y" value="$(arg pose_y)" /> -->
+    <arg name="robot_color" value="$(arg color)"/>
+  </include>
+
+</launch>
