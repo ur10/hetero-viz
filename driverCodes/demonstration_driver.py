@@ -21,7 +21,7 @@ for i in range(len(env['agent'])):
                  'task_time': env['tasks'][i]['time']}
     # self.task_track.append(task_dict)
     START.append(env['agent'][i]['depot'] *10 + 0.1*i )
-VIRTUAL_ROBOT_COUNT = 5
+VIRTUAL_ROBOT_COUNT = 6
 # REAL_ROBOT_MAP = { 2:"102", 9:"104",5:"112",8:"109",1:"106"}
 # REAL_ROBOT_MAP = {1:"106",3:"108",  7:"113", 11:"110",9:"104", 6:"103", 4:"111", 8:"109", 5:"112", 2:"102"}
 REAL_ROBOT_MAP = {}

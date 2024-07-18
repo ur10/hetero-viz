@@ -11,7 +11,7 @@ import os
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
 VEL_SCALE  = 1
 testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
-AGENT_NUMS = 5
+AGENT_NUMS = 6
 LEFT = [0, 0]
 RESOLUTION = 0.5
 class MultiRobotController:
@@ -31,7 +31,7 @@ class MultiRobotController:
         print(f'the task locations are {task_locations}')
         self.task_locations = task_locations
         for i in range(len(env['tasks'])):
-            task_dict = {'current_agent_num': 0, 'required_agent_num': (len(env['tasks'][i]['members'])), 'task_time': env['tasks'][i]['time']}
+            task_dict = {'current_agent_num': 0, 'required_agent_num': (len(env['tasks'][i]['members'])), 'task_time': env['tasks'][i]['time'], 'members': env['tasks'][i]['members']}
             self.task_track.append(task_dict)
 
         for i in range(AGENT_NUMS):
@@ -121,7 +121,7 @@ class MultiRobotController:
                         # print(f"published velocit {vel_pub}")
                         self.vel_pubs[i].publish(vel_pub)
 
-                    elif abs(self.positions[i].x - self.agent_locations[i][curr_idx][0]) < 0.02 and abs(self.positions[i].y - self.agent_locations[i][curr_idx][1]) < 0.02:
+                    elif abs(self.positions[i].x - self.agent_locations[i][curr_idx][0]) < 0.08 and abs(self.positions[i].y - self.agent_locations[i][curr_idx][1]) < 0.08:
                         vel_pub = Twist()
                         vel_pub.linear.x = 0
                         vel_pub.linear.y = 0
