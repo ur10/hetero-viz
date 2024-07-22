@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import rosnode
 import rospy
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
@@ -8,6 +8,7 @@ from task_env import TaskEnv
 from visualization_msgs.msg import Marker, MarkerArray
 import numpy as np
 import os
+from std_msgs.msg import  Bool
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
 VEL_SCALE  = 1
 testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
@@ -25,6 +26,9 @@ class MultiRobotController:
         self.start_positions = []
         self.agents_track = []
         self.task_track = []
+        self.status_check = [False]*AGENT_NUMS
+        self.node_waiting = True
+
         env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
         self.env = env
         task_locations = [env['tasks'][i]['location']*10 + 0.1*i for i in range(len(env['tasks']))]
@@ -58,6 +62,7 @@ class MultiRobotController:
 
         # Subscriber for each robot's odometry
         self.odom_subs = []
+        self.status_subs = []
 
 
         for i in range(0,AGENT_NUMS):
@@ -68,11 +73,17 @@ class MultiRobotController:
             self.positions.append(pose)
         for i in range(0, AGENT_NUMS):
             sub = rospy.Subscriber(f'/nexus{i}/cmd_vel', Twist, self.odom_callback, callback_args=i)
+            # stat_sub = rospy.Subscriber( f"/nexus{i}/status_check", Bool,self.status_callback,  callback_args=i)
+            # self.status_subs.append(stat_sub)
             self.odom_subs.append(sub)
+        self.node_check_sub = rospy.Subscriber( f"/nexus{AGENT_NUMS-1}/status_check", Bool,self.status_callback)
         self.marker_pub = rospy.Publisher('/visualization_marker_array', MarkerArray, queue_size=10)
         # To store the position of each robot
         # self.positions = {}
 
+    def status_callback(self, msg):
+        self.node_waiting = msg.data
+        # print('in the status callback')
     def get_goal_velocity(self, goal, current_pose):
          a = 1
          angle = np.arctan2(goal.y - current_pose.y, goal.x - current_pose.x)
@@ -89,6 +100,7 @@ class MultiRobotController:
         self.agents_track[robot_id]['odom_time'] = current_time
         self.positions[robot_id].x += vel.linear.x * time_diff
         self.positions[robot_id].y += vel.linear.y * time_diff
+        # print(f"robot {robot_id}")
         # rospy.loginfo(f"Robot {robot_id} position: {self.positions[robot_id].x, self.positions[robot_id].y}")
 
     def publish_velocity_commands(self):
@@ -97,14 +109,16 @@ class MultiRobotController:
             twist = Twist()
             twist.linear.x = 0.5  # Example linear velocity
             twist.angular.z = 0.1  # Example angular velocity
-
+            print(self.status_check)
             for i in range(AGENT_NUMS):
+                # if all(agent == True for agent in self.status_check):
+                #     print('Inside the loop')
                 if True:
                     # poses[i].x += velocities[i].linear.x * VEL_SCALE
                     # poses[i].y += velocities[i].linear.y * VEL_SCALE
                     curr_idx = self.agents_track[i]['task_idx']
 
-                    # if self.agents_track[i]['waiting'] == True:
+                       # if self.agents_track[i]['waiting'] == True:
                     #     vel_pub = Twist()
                     #     vel_pub.linear.x = 0
                     #     vel_pub.linear.y = 0
@@ -267,6 +281,11 @@ class MultiRobotController:
 if __name__ == '__main__':
     try:
         controller = MultiRobotController()
+        while controller.node_waiting:
+            print('waiting on the node')
+            # rospy.sleep(0.1)
+        for i in range(AGENT_NUMS):
+            controller.agents_track[i]['odom_time'] = rospy.Time.now().to_sec()
         controller.publish_velocity_commands()
     except rospy.ROSInterruptException:
         pass

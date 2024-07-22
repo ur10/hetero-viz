@@ -132,6 +132,7 @@ import rospy
 import numpy as np
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
+from std_msgs.msg import Bool
 from marmot.msg import ROS_Task
 import tf
 from task_env import TaskEnv
@@ -173,6 +174,8 @@ if __name__ == '__main__':
 
     rospy.loginfo(robotName + " Ready")
     Pub = rospy.Publisher("/" + f"nexus{robotNumber}" + "/cmd_vel", Twist, queue_size=1)
+
+    stat_pub = rospy.Publisher("/" + f"nexus{robotNumber}" + "/status_check", Bool, queue_size=1)
     velSub = rospy.Subscriber("/" + robotName + "/cmd_vel", Twist, velCallback)
 
     pose = Odometry().pose.pose.position
@@ -189,6 +192,7 @@ if __name__ == '__main__':
 
     time = rospy.Time.now().to_sec()
     current_time = time
+
     while not rospy.is_shutdown():
         cmd_vel = Twist()
         cmd_vel.linear.x = 0.2
@@ -199,6 +203,11 @@ if __name__ == '__main__':
         # Pub.publish(cmd_vel)
         pose.x += vel.linear.x * time_diff
         pose.y += vel.linear.y * time_diff
+
+
+        stat_msg= Bool()
+        stat_msg.data = False
+        stat_pub.publish(stat_msg)
         if robotNumber == 2:
             print(f'current pose is {pose}')
         br.sendTransform(
