@@ -22,6 +22,7 @@ class MultiRobotController:
 
         # Publisher for each robot's cmd_vel
         self.vel_pubs = []
+        self.hetero_stat_pubs = []
         self.positions = []
         self.agent_locations = []
         self.start_positions = []
@@ -59,6 +60,8 @@ class MultiRobotController:
 
         for i in range(0, AGENT_NUMS):
             pub = rospy.Publisher(f'/nexus{i}/cmd_vel', Twist, queue_size=10)
+            hetero_stat_pub = rospy.Publisher('/hetero_agent_stat', String, queue_size=10)
+            self.hetero_stat_pubs.append(hetero_stat_pub)
             self.vel_pubs.append(pub)
 
         # Subscriber for each robot's odometry
@@ -77,9 +80,11 @@ class MultiRobotController:
             # stat_sub = rospy.Subscriber( f"/nexus{i}/status_check", Bool,self.status_callback,  callback_args=i)
             # self.status_subs.append(stat_sub)
             self.odom_subs.append(sub)
+
+
         self.node_check_sub = rospy.Subscriber( f"/nexus{AGENT_NUMS-1}/status_check", Bool,self.status_callback)
         self.marker_pub = rospy.Publisher('/visualization_marker_array', MarkerArray, queue_size=10)
-        self.hetero_stat_pub = rospy.Publisher('/hetero_agent_stat', String, queue_size=10)
+
         # To store the position of each robot
         # self.positions = {}
 
@@ -142,6 +147,10 @@ class MultiRobotController:
                         vel_pub.linear.x = 0
                         vel_pub.linear.y = 0
                         self.vel_pubs[i].publish(vel_pub)
+
+                        agent_msg = String()
+                        agent_msg.data = f"Agent{i} - Task{self.agents_track[i]['task_num']}"
+                        self.hetero_stat_pubs[i].publish(agent_msg)
 
                         if self.agents_track[i]['waiting'] == False:
                             task_idx = self.agents_track[i]['task_num']
@@ -239,6 +248,10 @@ class MultiRobotController:
                         vel_pub = self.get_goal_velocity(goal_pose, self.positions[i])
                         # print(f"published velocit {vel_pub}")
                         self.vel_pubs[i].publish(vel_pub)
+
+                        agent_msg = String()
+                        agent_msg.data = f"Agent{i} - TRAVELLING"
+                        self.hetero_stat_pubs[i].publish(agent_msg)
 
             # Publish the same velocity command to each robot
             # for pub in self.vel_pubs:
