@@ -9,6 +9,7 @@ from visualization_msgs.msg import Marker, MarkerArray
 import numpy as np
 import os
 from std_msgs.msg import  Bool
+from std_msgs.msg import String
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
 VEL_SCALE  = 1
 testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
@@ -78,6 +79,7 @@ class MultiRobotController:
             self.odom_subs.append(sub)
         self.node_check_sub = rospy.Subscriber( f"/nexus{AGENT_NUMS-1}/status_check", Bool,self.status_callback)
         self.marker_pub = rospy.Publisher('/visualization_marker_array', MarkerArray, queue_size=10)
+        self.hetero_stat_pub = rospy.Publisher('/hetero_agent_stat', String, queue_size=10)
         # To store the position of each robot
         # self.positions = {}
 
