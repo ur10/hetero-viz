@@ -19,6 +19,7 @@ RESOLUTION = 0.5
 class MultiRobotController:
     def __init__(self):
         rospy.init_node('multi_robot_controller', anonymous=True)
+        rospy.get_param
 
         # Publisher for each robot's cmd_vel
         self.vel_pubs = []
@@ -28,6 +29,7 @@ class MultiRobotController:
         self.start_positions = []
         self.agents_track = []
         self.task_track = []
+        self.agent_stat_subs = []
         self.status_check = [False]*AGENT_NUMS
         self.node_waiting = True
 
@@ -60,7 +62,7 @@ class MultiRobotController:
 
         for i in range(0, AGENT_NUMS):
             pub = rospy.Publisher(f'/nexus{i}/cmd_vel', Twist, queue_size=10)
-            hetero_stat_pub = rospy.Publisher('/hetero_agent_stat', String, queue_size=10)
+            hetero_stat_pub = rospy.Publisher(f'/nexus{i}/hetero_agent_stat', String, queue_size=10)
             self.hetero_stat_pubs.append(hetero_stat_pub)
             self.vel_pubs.append(pub)
 
@@ -75,6 +77,12 @@ class MultiRobotController:
             pose.y = self.start_positions[i][1]
 
             self.positions.append(pose)
+        for i in range(0, AGENT_NUMS):
+            sub = rospy.Subscriber(f'/nexus{i}/hetero_agent_stat', String, self.agent_stat_callback, callback_args=i)
+            # stat_sub = rospy.Subscriber( f"/nexus{i}/status_check", Bool,self.status_callback,  callback_args=i)
+            # self.status_subs.append(stat_sub)
+            self.agent_stat_subs.append(sub)
+
         for i in range(0, AGENT_NUMS):
             sub = rospy.Subscriber(f'/nexus{i}/cmd_vel', Twist, self.odom_callback, callback_args=i)
             # stat_sub = rospy.Subscriber( f"/nexus{i}/status_check", Bool,self.status_callback,  callback_args=i)
@@ -91,6 +99,22 @@ class MultiRobotController:
     def status_callback(self, msg):
         self.node_waiting = msg.data
         # print('in the status callback')
+
+    def agent_stat_callback(self, msg, robot_id):
+        agent_msg = msg.data
+        f"Agent{i} - TRAVELLING"
+        f"Agent{i} - Task{self.agents_track[i]['task_num']}"
+
+        # task_num = -1
+        if "TRAVELLING" not in agent_msg:
+            task_num = agent_msg[-1]
+            task_idx = self.task_track.index(task_num)
+            self.task_track[task_idx]['current_agent_num'] +=1
+            print(f"Task {task_num} updated as uav{robot_id} arrived")
+
+
+
+
     def get_goal_velocity(self, goal, current_pose):
          a = 1
          angle = np.arctan2(goal.y - current_pose.y, goal.x - current_pose.x)
