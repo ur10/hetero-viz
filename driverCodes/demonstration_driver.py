@@ -15,13 +15,18 @@ testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
 
 env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
 
+for i in range(0,3):
+    env['agent'][i] = env['agent'][i+3]
+    del env['agent'][i+3]
+# self.env = env
+
 START = []
 for i in range(len(env['agent'])):
     task_dict = {'current_agent_num': 0, 'required_agent_num': max(env['tasks'][i]['requirements']),
                  'task_time': env['tasks'][i]['time']}
     # self.task_track.append(task_dict)
     START.append(env['agent'][i]['depot'] *10 + 0.1*i )
-VIRTUAL_ROBOT_COUNT = 6
+VIRTUAL_ROBOT_COUNT = 3
 # REAL_ROBOT_MAP = { 2:"102", 9:"104",5:"112",8:"109",1:"106"}
 # REAL_ROBOT_MAP = {1:"106",3:"108",  7:"113", 11:"110",9:"104", 6:"103", 4:"111", 8:"109", 5:"112", 2:"102"}
 REAL_ROBOT_MAP = {}

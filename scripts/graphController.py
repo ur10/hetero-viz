@@ -153,6 +153,10 @@ testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
 env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
 START = []
 
+for i in range(0,3):
+    env['agent'][i] = env['agent'][i+3]
+    del env['agent'][i+3]
+# self.env = env
 
 for i in range(len(env['agent'])):
     task_dict = {'current_agent_num': 0, 'required_agent_num': max(env['tasks'][i]['requirements']),
@@ -208,8 +212,8 @@ if __name__ == '__main__':
         stat_msg= Bool()
         stat_msg.data = False
         stat_pub.publish(stat_msg)
-        if robotNumber == 2:
-            print(f'current pose is {pose}')
+        # if robotNumber == 2:
+            # print(f'current pose is {pose}')
         br.sendTransform(
             (pose.x, pose.y, 0.07),
             (0, 0, 0, 1),
@@ -218,4 +222,4 @@ if __name__ == '__main__':
             "/map"
         )
         # rospy.spin_once()
-        rospy.sleep(0.05)
+        rospy.sleep(0.09)
