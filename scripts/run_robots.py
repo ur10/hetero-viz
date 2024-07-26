@@ -10,9 +10,10 @@ import numpy as np
 import os
 from std_msgs.msg import  Bool
 from std_msgs.msg import String
+from driverCodes.demonstration_driver import testSet
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
-VEL_SCALE  = 1
-testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
+VEL_SCALE = 1
+# testSet = f"{os.path.expanduser('~')}/Weiheng/HeteroMRTA/testSet_simulation"
 AGENT_NUMS = 3
 LEFT = [0, 0]
 RESOLUTION = 0.5
@@ -35,7 +36,7 @@ class MultiRobotController:
         self.ugv_ids = [3,4,5]
         self.uav_ids = [0,1,2]
 
-        env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
+        env = pickle.load(open(f'{testSet}/env_1/baseline.pkl', 'rb'))
 
         for i in range(0,3):
             env['agent'][i] = env['agent'][i+3]
@@ -252,9 +253,9 @@ class MultiRobotController:
 
     def publish_markers(self):
         marker_array = MarkerArray()
-        markerpose = [(5.02, 6.73), (1.80, 11.98), (1.87, 11.35), (0.59, 6.39), (-1.36, 8.76), (-3.45, 7.89),
-                      (2.19, 9.99), (1.40, 10.13), (-1.06, 11.57), (-0.11, 8.93),
-                      (-2.12, 8.03), (4.44, 7.18), (0.98, 4.27), (0.55, 3.32), (0.27, 3.74)  ]
+        # markerpose = [(5.02, 6.73), (1.80, 11.98), (1.87, 11.35), (0.59, 6.39), (-1.36, 8.76), (-3.45, 7.89),
+        #               (2.19, 9.99), (1.40, 10.13), (-1.06, 11.57), (-0.11, 8.93),
+        #               (-2.12, 8.03), (4.44, 7.18), (0.98, 4.27), (0.55, 3.32), (0.27, 3.74)  ]
         for i in range(len(self.task_locations)):
             marker = Marker()
             marker.header.frame_id = "map"
