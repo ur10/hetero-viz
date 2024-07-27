@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(marmot)
 
 find_package(catkin REQUIRED COMPONENTS
-  gazebo_ros
+  #gazebo_ros
   geometry_msgs
   move_base
   nav_msgs
