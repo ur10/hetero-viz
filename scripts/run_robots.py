@@ -10,9 +10,10 @@ import numpy as np
 import os
 from std_msgs.msg import  Bool
 from std_msgs.msg import String
+# from driverCodes.demonstration_driver import testSet
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
-VEL_SCALE  = 1
-testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
+VEL_SCALE = 1
+testSet = f"{os.path.expanduser('~')}/Weiheng/HeteroMRTA/testSet_simulation"
 AGENT_NUMS = 3
 LEFT = [0, 0]
 RESOLUTION = 0.5
@@ -35,13 +36,13 @@ class MultiRobotController:
         self.ugv_ids = [3,4,5]
         self.uav_ids = [0,1,2]
 
-        env = pickle.load(open(f'{testSet}/env_0/baseline.pkl', 'rb'))
+        env = pickle.load(open(f'{testSet}/env_1/baseline.pkl', 'rb'))
 
         for i in range(0,3):
             env['agent'][i] = env['agent'][i+3]
             del env['agent'][i+3]
         self.env = env
-        task_locations = [env['tasks'][i]['location']*10 + 0.1*i for i in range(len(env['tasks']))]
+        task_locations = [env['tasks'][i]['location']*5 for i in range(len(env['tasks']))]
         print(f'the task locations are {task_locations}')
         self.task_locations = task_locations
         for i in range(len(env['tasks'])):
@@ -53,7 +54,7 @@ class MultiRobotController:
             agent_dict['route'] = env['agent'][i]['route'][1:-1]
             agent_dict['task_num'] = agent_dict['route'][0]
             self.agents_track.append(agent_dict)
-            self.start_positions.append(env['agent'][i]['depot'] *10 +0.1*i)
+            self.start_positions.append(env['agent'][i]['depot'] *10 +0.4*i)
 
 
         for i in range(AGENT_NUMS):
@@ -115,12 +116,13 @@ class MultiRobotController:
         if robot_id in self.uav_ids:
         # task_num = -1
             if "TRAVELLING" not in agent_msg:
+                print(f"inside the callback for agent {robot_id}")
 
-                task_num = agent_msg[-1]
-                task_idx = self.task_track.index(task_num)
-                if robot_id not in self.task_track[task_idx]['members']:
-                    self.task_track[task_idx]['current_agent_num'] +=1
-                    self.task_track[task_idx]['members'].append(robot_id)
+                task_num = int(agent_msg[-1])
+                # task_idx = self.task_track.index(task_num)
+                if robot_id not in self.task_track[task_num]['members']:
+                    self.task_track[task_num]['current_agent_num'] +=1
+                    self.task_track[task_num]['members'].append(robot_id)
                     print(f"Task {task_num} updated as uav{robot_id} arrived")
 
 
@@ -186,7 +188,7 @@ class MultiRobotController:
                         task_idx = self.agents_track[i]['task_num']
                         
                    
-                        print(f"Publishing that agent{i+AGENT_NUMS} arrived at task {task_idx}")
+                        # print(f"Publishing that agent{i+AGENT_NUMS} arrived at task {task_idx}")
                         self.task_track[task_idx]['members'].append(i)
                         agent_msg = String()
                         agent_msg.data = f"Agent{i+AGENT_NUMS} - Task{self.agents_track[i]['task_num']}"
@@ -205,8 +207,8 @@ class MultiRobotController:
                             task_idx = self.agents_track[i]['task_num']
                             current_agent_count = self.task_track[task_idx]['current_agent_num']
                             required_agent_count = self.task_track[task_idx]['required_agent_num']
-                            print(
-                                f" ROBOT {i} - !!! WAITING ON THE task - {self.agents_track[i]['task_num']}, remaining agents to arrive - {required_agent_count - current_agent_count}")
+                            # print(
+                            #     f" ROBOT {i} - !!! WAITING ON THE task - {self.agents_track[i]['task_num']}, remaining agents to arrive - {required_agent_count - current_agent_count}")
 
                             if current_agent_count >= required_agent_count and self.agents_track[i]['first_arrival'] == True:
                                 self.agents_track[i]['first_arrival'] = False
@@ -252,9 +254,9 @@ class MultiRobotController:
 
     def publish_markers(self):
         marker_array = MarkerArray()
-        markerpose = [(5.02, 6.73), (1.80, 11.98), (1.87, 11.35), (0.59, 6.39), (-1.36, 8.76), (-3.45, 7.89),
-                      (2.19, 9.99), (1.40, 10.13), (-1.06, 11.57), (-0.11, 8.93),
-                      (-2.12, 8.03), (4.44, 7.18), (0.98, 4.27), (0.55, 3.32), (0.27, 3.74)  ]
+        # markerpose = [(5.02, 6.73), (1.80, 11.98), (1.87, 11.35), (0.59, 6.39), (-1.36, 8.76), (-3.45, 7.89),
+        #               (2.19, 9.99), (1.40, 10.13), (-1.06, 11.57), (-0.11, 8.93),
+        #               (-2.12, 8.03), (4.44, 7.18), (0.98, 4.27), (0.55, 3.32), (0.27, 3.74)  ]
         for i in range(len(self.task_locations)):
             marker = Marker()
             marker.header.frame_id = "map"
