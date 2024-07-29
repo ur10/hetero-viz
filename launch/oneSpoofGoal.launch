@@ -1,18 +1,18 @@
 <launch>
-  <arg name="robot_name" default="1" />
+  <arg name="task_id" default="1" />
   <arg name="goalX" default="6" />
   <arg name="goalY" default="1" />
-  <arg name="robot_color" default="Red" />
+  <arg name="task_color" default="Red" />
 
 
   <!-- <group ns="RigidBody$(arg robot_name)"> -->
-  <group ns="nexus$(arg robot_name)_goal">
-    <param name="tf_prefix" value="nexus$(arg robot_name)_goal" />
+  <group ns="nexus$(arg task_id)_goal">
+    <param name="tf_prefix" value="nexus$(arg task_id)_goal" />
     <!-- <param name="tf_prefix" value="RigidBody$(arg robot_real_id)" /> -->
-    <param command="$(find xacro)/xacro $(find marmot)/urdf/goalPole.xacro robot_color:=$(arg robot_color)" name="robot_description"/>
+    <param command="$(find xacro)/xacro $(find marmot)/urdf/goalPole.xacro robot_color:=$(arg task_color)" name="robot_description"/>
 
     <node name="roboTFNode" pkg="marmot" type="spoofGoalTransform.py" output="screen" clear_params="true">
-      <param name="name" value="$(arg robot_name)" /> 
+      <param name="name" value="$(arg task_id)" />
       <param name="startX" value="$(arg goalX)" /> 
       <param name="startY" value="$(arg goalY)" /> 
     </node>

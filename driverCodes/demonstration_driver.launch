@@ -2,7 +2,15 @@
 <!--     <arg name="robot_name" default="1" /> -->
 <!--     <arg name="startX" default="1" /> -->
 <!--     <arg name="startY" default="1" /> -->
+
     <node name="driver" pkg="marmot" type="demonstration_driver.py" output="screen"/>
+    <param name="arena_scale" value="10" />
+    <param name="agent_speed" value="0.6" />
+    <param name="agent_wait_bias" value="10.3"/>
+    <param name="agent_goal_bias" value="0.08"/>
+    <param name="agent_goal_offset" value="0.5"/>
+
+
 <!--     <node name="roboNode" pkg="marmot" type="graphController.py" output="screen" clear_params="true"> -->
 <!--       <param name="name" value="1" /> -->
 <!--       <param name="startX" value="1" /> -->

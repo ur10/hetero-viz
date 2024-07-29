@@ -10,12 +10,16 @@ import numpy as np
 import os
 from std_msgs.msg import  Bool
 from std_msgs.msg import String
+# from driverCodes.demonstration_driver import testSet
+# from driverCodes.demonstration_driver import Scale_factor
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
-VEL_SCALE  = 1
+VEL_SCALE = 1
 testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
 AGENT_NUMS = 3
 LEFT = [0, 0]
 RESOLUTION = 0.5
+
+COLOR = ['Orange','Cyan','Blue','Purple','Green','Yellow','Magenta','White','Black','Brown','Pink','Turquoise','Gold']
 
 class MultiRobotController:
     def __init__(self):
@@ -36,24 +40,34 @@ class MultiRobotController:
         self.uav_ids = [0,1,2]
 
         env = pickle.load(open(f'{testSet}/env_1/baseline.pkl', 'rb'))
-
+        
+        Scale_factor = float(rospy.get_param('/arena_scale'))
+        self.agent_speed = float(rospy.get_param('/agent_speed'))
+        self.agent_wait_bias = float(rospy.get_param('/agent_wait_bias'))
+        self.agent_goal_bias = float(rospy.get_param('/agent_goal_bias'))
+        self.agent_goal_offset = float(rospy.get_param('/agent_goal_offset'))
+        print(f"the agent speed is {self.agent_speed}")
         for i in range(0,3):
             env['agent'][i] = env['agent'][i+3]
             del env['agent'][i+3]
         self.env = env
         task_locations = [env['tasks'][i]['location']*5 for i in range(len(env['tasks']))]
+        for i in range(len(task_locations)):
+            task_locations[i][1] = -task_locations[i][1]
+
         print(f'the task locations are {task_locations}')
         self.task_locations = task_locations
         for i in range(len(env['tasks'])):
-            task_dict = {'current_agent_num': 0, 'required_agent_num': (len(env['tasks'][i]['members'])), 'task_time': env['tasks'][i]['time'], 'members': []}
+            task_dict = {'current_agent_num': 0, 'required_agent_num': (len(env['tasks'][i]['members'])), 'task_time': env['tasks'][i]['time'] + self.agent_wait_bias, 'members': []}
             self.task_track.append(task_dict)
 
         for i in range(AGENT_NUMS):
-            agent_dict = {'task_idx': 0, 'task_num': 0, 'route': [],'waiting': False, 'task_start_time': rospy.Time.now().to_sec(), 'current_position': [0, 0], 'first_arrival': True, 'travelling': False, 'odom_time': rospy.Time.now().to_sec()}
+            agent_dict = {'task_idx': 0, 'task_num': 0, 'route': [],'waiting': False, 'task_start_time': rospy.Time.now().to_sec(), 'current_position': [0, 0], 'first_arrival': True, 'travelling': False, 'odom_time': rospy.Time.now().to_sec(), 'color':COLOR[i+3]}
             agent_dict['route'] = env['agent'][i]['route'][1:-1]
             agent_dict['task_num'] = agent_dict['route'][0]
             self.agents_track.append(agent_dict)
-            self.start_positions.append(env['agent'][i]['depot'] *10 +0.4*i)
+            env['agent'][i]['depot'][0] = -env['agent'][i]['depot'][0]
+            self.start_positions.append(env['agent'][i]['depot'] *Scale_factor +0.4*i)
 
 
         for i in range(AGENT_NUMS):
@@ -108,14 +122,14 @@ class MultiRobotController:
 
     def agent_stat_callback(self, msg, robot_id):
         agent_msg = msg.data
-        print(f'robot{robot_id} - {msg.data}')
+        # print(f'robot{robot_id} - {msg.data}')
         # f"Agent{i} - TRAVELLING"
         # f"Agent{i} - Task{self.agents_track[i]['task_num']}"
 
         if robot_id in self.uav_ids:
         # task_num = -1
             if "TRAVELLING" not in agent_msg:
-                print(f"inside the callback for agent {robot_id}")
+                # print(f"inside the callback for agent {robot_id}")
 
                 task_num = int(agent_msg[-1])
                 # task_idx = self.task_track.index(task_num)
@@ -131,8 +145,8 @@ class MultiRobotController:
          a = 1
          angle = np.arctan2(goal.y - current_pose.y, goal.x - current_pose.x)
          vel = Twist()
-         vel.linear.x = 0.6 * np.cos(angle)
-         vel.linear.y = 0.6 * np.sin(angle)
+         vel.linear.x = self.agent_speed * np.cos(angle)
+         vel.linear.y = self.agent_speed * np.sin(angle)
          return  vel
 
     def odom_callback(self, vel, robot_id):
@@ -178,7 +192,7 @@ class MultiRobotController:
                         # print(f"published velocit {vel_pub}")
                         self.vel_pubs[i].publish(vel_pub)
 
-                    elif abs(self.positions[i].x - self.agent_locations[i][curr_idx][0]) < 0.08 and abs(self.positions[i].y - self.agent_locations[i][curr_idx][1]) < 0.08:
+                    elif abs(self.positions[i].x - self.agent_locations[i][curr_idx][0]) < self.agent_goal_bias and abs(self.positions[i].y - self.agent_locations[i][curr_idx][1]) < self.agent_goal_bias:
                         vel_pub = Twist()
                         vel_pub.linear.x = 0
                         vel_pub.linear.y = 0
@@ -188,7 +202,9 @@ class MultiRobotController:
                         
                    
                         # print(f"Publishing that agent{i+AGENT_NUMS} arrived at task {task_idx}")
-                        self.task_track[task_idx]['members'].append(i)
+                        if (i+3) not in self.task_track[task_idx]['members']:
+                            self.task_track[task_idx]['members'].append(i+3)
+    
                         agent_msg = String()
                         agent_msg.data = f"Agent{i+AGENT_NUMS} - Task{self.agents_track[i]['task_num']}"
                         self.hetero_stat_pubs[i].publish(agent_msg)
@@ -215,7 +231,8 @@ class MultiRobotController:
 
                             elif current_agent_count >= required_agent_count and self.agents_track[i]['first_arrival'] == False:
                                 work_time = abs(self.agents_track[i]['task_start_time'] - rospy.Time.now().to_sec())
-                                print(f'Agent{i+AGENT_NUMS} The time for working is {work_time}')
+                                agent_color = self.agents_track[i]['color']
+                                print(f'Agent {agent_color} The time for working is {work_time}')
                                 if work_time > self.task_track[task_idx]['task_time']:
 
                                     self.agents_track[i]['task_idx'] += 1 # (2.7 , 11.4), (-3.2, 7.5),(4.95,6.6),
@@ -224,11 +241,22 @@ class MultiRobotController:
                                     self.agents_track[i]['waiting'] = False
 
 
-                                    print('waitinng bottom')
+                                    # print('waitinng bottom')
                                 vel_pub = Twist()
                                 vel_pub.linear.x = 0
                                 vel_pub.linear.y = 0
- 
+                            else:
+                                task_num = self.agents_track[i]['task_num']
+                                available_members = [member for member in self.task_track[task_num]['members']]
+                                print(available_members)
+                                agent_color = self.agents_track[i]['color']
+                                print(f'Agent {agent_color} is waiting for {abs( current_agent_count - required_agent_count )}')
+                                for i in range(len(self.env['tasks'][task_idx]['members'])):
+                                    if i in available_members:
+                                        print(f"available_members - {COLOR[i]}")
+                                    else:
+                                        print(f"UNavailable_members - {COLOR[i]}")
+
                     else:
                         self.agents_track[i]['travelling'] = True
                         self.agents_track[i]['first_arrival'] = True
@@ -253,9 +281,9 @@ class MultiRobotController:
 
     def publish_markers(self):
         marker_array = MarkerArray()
-        markerpose = [(5.02, 6.73), (1.80, 11.98), (1.87, 11.35), (0.59, 6.39), (-1.36, 8.76), (-3.45, 7.89),
-                      (2.19, 9.99), (1.40, 10.13), (-1.06, 11.57), (-0.11, 8.93),
-                      (-2.12, 8.03), (4.44, 7.18), (0.98, 4.27), (0.55, 3.32), (0.27, 3.74)  ]
+        # markerpose = [(5.02, 6.73), (1.80, 11.98), (1.87, 11.35), (0.59, 6.39), (-1.36, 8.76), (-3.45, 7.89),
+        #               (2.19, 9.99), (1.40, 10.13), (-1.06, 11.57), (-0.11, 8.93),
+        #               (-2.12, 8.03), (4.44, 7.18), (0.98, 4.27), (0.55, 3.32), (0.27, 3.74)  ]
         for i in range(len(self.task_locations)):
             marker = Marker()
             marker.header.frame_id = "map"
