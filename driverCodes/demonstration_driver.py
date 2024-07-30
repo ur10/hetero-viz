@@ -11,7 +11,7 @@ import os
 rospack = rospkg.RosPack()
 PATH = rospack.get_path('marmot')
 rospy.init_node('driverNode')
-testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
+testSet = rospy.get_param('/testSet_name')
 env = pickle.load(open(f'{testSet}/env_1/baseline.pkl', 'rb'))
 Scale_factor = int(rospy.get_param('arena_scale'))
 

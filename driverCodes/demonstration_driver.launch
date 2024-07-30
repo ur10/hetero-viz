@@ -9,6 +9,7 @@
     <param name="agent_wait_bias" value="10.3"/>
     <param name="agent_goal_bias" value="0.08"/>
     <param name="agent_goal_offset" value="0.5"/>
+    <param name="testSet_name" value="/home/ur10/mapf_ws/testSet_simulation"/>
 
 
 <!--     <node name="roboNode" pkg="marmot" type="graphController.py" output="screen" clear_params="true"> -->

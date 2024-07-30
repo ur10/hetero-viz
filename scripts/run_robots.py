@@ -11,10 +11,11 @@ import os
 from std_msgs.msg import  Bool
 from std_msgs.msg import String
 # from driverCodes.demonstration_driver import testSet
-# from driverCodes.demonstration_driver import Scale_factor
+
 #TODO - 1. CHECK THE WAITING TIME 2. CHECK THE TASK REQUIREMENT NUMBER 3. PUBLISH MARKERS AT THE CORRECT PLACE 4. CORRECT GOAL POSE
 VEL_SCALE = 1
-testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
+# testSet = f"{os.path.expanduser('~')}/mapf_ws/testSet_simulation"
+
 AGENT_NUMS = 3
 LEFT = [0, 0]
 RESOLUTION = 0.5
@@ -38,7 +39,8 @@ class MultiRobotController:
         self.node_waiting = True
         self.ugv_ids = [3,4,5]
         self.uav_ids = [0,1,2]
-
+        
+        testSet = rospy.get_param('/testSet_name')
         env = pickle.load(open(f'{testSet}/env_1/baseline.pkl', 'rb'))
         
         Scale_factor = float(rospy.get_param('/arena_scale'))
@@ -52,8 +54,10 @@ class MultiRobotController:
             del env['agent'][i+3]
         self.env = env
         task_locations = [env['tasks'][i]['location']*5 for i in range(len(env['tasks']))]
+
         for i in range(len(task_locations)):
             task_locations[i][1] = -task_locations[i][1]
+
 
         print(f'the task locations are {task_locations}')
         self.task_locations = task_locations
@@ -66,6 +70,7 @@ class MultiRobotController:
             agent_dict['route'] = env['agent'][i]['route'][1:-1]
             agent_dict['task_num'] = agent_dict['route'][0]
             self.agents_track.append(agent_dict)
+
             env['agent'][i]['depot'][0] = -env['agent'][i]['depot'][0]
             self.start_positions.append(env['agent'][i]['depot'] *Scale_factor +0.4*i)
 
@@ -130,6 +135,7 @@ class MultiRobotController:
         # task_num = -1
             if "TRAVELLING" not in agent_msg:
                 # print(f"inside the callback for agent {robot_id}")
+
 
                 task_num = int(agent_msg[-1])
                 # task_idx = self.task_track.index(task_num)
@@ -202,9 +208,10 @@ class MultiRobotController:
                         
                    
                         # print(f"Publishing that agent{i+AGENT_NUMS} arrived at task {task_idx}")
+
                         if (i+3) not in self.task_track[task_idx]['members']:
                             self.task_track[task_idx]['members'].append(i+3)
-    
+
                         agent_msg = String()
                         agent_msg.data = f"Agent{i+AGENT_NUMS} - Task{self.agents_track[i]['task_num']}"
                         self.hetero_stat_pubs[i].publish(agent_msg)
