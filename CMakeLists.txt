@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(marmot)
 
 find_package(catkin REQUIRED COMPONENTS
-  gazebo_ros
+ # gazebo_ros
   geometry_msgs
   move_base
   nav_msgs
@@ -42,7 +42,7 @@ include_directories(
 )
 
 ## Find gazebo
-find_package(gazebo REQUIRED)
+#find_package(gazebo REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GAZEBO_CXX_FLAGS}")
 include_directories(${GAZEBO_INCLUDE_DIRS})
 link_directories(${GAZEBO_LIBRARY_DIRS})
